@@ -3,10 +3,11 @@
 
 
 int main(int argc, char *argv[], char *envp[]) {
-	int i,found;
+	int i, j, found;
 
-	char buffer[512], argCopy[512];
+	char buffer[512], argCopy[512], valuesCopy[512];
 	char *name, *value, *context, *token;
+	char *contextValue;
 	
 	if(argv[1] == NULL){
 	 printf("Please do mind that for this program to work you'll need command-line arguments\n");
@@ -22,11 +23,18 @@ int main(int argc, char *argv[], char *envp[]) {
 	  strcpy(buffer, envp[i]);
 	  name = strtok_s(buffer, "=", &context);
 	  value = strtok_s(NULL, "", &context);
-
+	 	  
 	  if(strcmp(token, name) == 0){
-	   printf("ENV Name: %s\nENV Value: %s\n\n", name, value);
-	   found = 1;
-	   break;
+	    strcpy(valuesCopy, value);
+	    char *part = strtok_s(valuesCopy, ";", &contextValue);
+
+	    while (part != NULL){
+	     printf("ENV Name: %s\nENV Value: %s\n\n", name, part);
+	     part = strtok_s(NULL, ";", &contextValue);
+	    };
+
+	    found = 1;
+	    break;
 	  };
     	 };
 
