@@ -1,0 +1,42 @@
+//f dec
+char* findEnv(char *searchedEnv, char **envs);
+char* splitNameAndValue(char *env);
+
+//f1
+include <string.h>
+
+char* findEnv(char *searchedEnv, char **envs){
+ int i, found;
+
+ for(i=0; envs[i] != NULL; i++){
+  if(strcmp(searchevEnv, envs[i]) == 0){
+    return envs[i];
+  };
+ };
+ 
+ return 0;
+};
+
+//f2
+include <string.h>
+
+char* splitNameAndValue(char *env){
+ char buffer[512];
+ char *name, *value, *context;
+ char valuesArr[1024];
+ int i = 0;
+
+ strcpy(buffer, env);
+ name = strtok_s(buffer, "=", &context);
+ value = strtok_s(NULL, "", &context);
+ 
+ char *part = strtok_s(value, ";", &context);
+ 
+ while(part != NULL){
+  valuesArr[i] = part;
+  i++;
+  part = strtok_s(NULL, ";", &contextValue);
+ };
+
+ return valuesArr;
+};
