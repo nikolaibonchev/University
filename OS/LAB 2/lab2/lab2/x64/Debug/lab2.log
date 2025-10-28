@@ -1,0 +1,54 @@
+﻿  lab2.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\yvals_core.h(23,1): error C1189: #error:  error STL1003: Unexpected compiler, expected C++ compiler.
+  (compiling source file 'lab2.cpp')
+  
+  os2.c
+E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(10,11): error C2143: syntax error: missing '{' before '*'
+E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(13,5): error C2065: 'threadinfo': undeclared identifier
+E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(13,17): error C2065: 'p1': undeclared identifier
+E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(13,23): error C2065: 'threadinfo': undeclared identifier
+E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(13,34): error C2059: syntax error: ')'
+E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(14,35): error C2065: 'p1': undeclared identifier
+E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(14,39): error C2223: left of '->index' must point to struct/union
+E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(14,12): warning C4473: 'printf' : not enough arguments passed for format string
+      E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(14,12):
+      placeholders and their parameters expect 1 variadic arguments, but 0 were provided
+      E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(14,12):
+      the missing variadic argument 1 is required by format string '%d'
+  
+E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(16,38): error C2065: 'p1': undeclared identifier
+E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(16,42): error C2223: left of '->index' must point to struct/union
+E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(16,12): warning C4473: 'printf' : not enough arguments passed for format string
+      E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(16,12):
+      placeholders and their parameters expect 1 variadic arguments, but 0 were provided
+      E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(16,12):
+      the missing variadic argument 1 is required by format string '%d'
+  
+E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(28,16): error C2065: 'new': undeclared identifier
+E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(28,20): error C2143: syntax error: missing ';' before 'type'
+E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(28,23): error C2143: syntax error: missing ';' before '['
+E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(28,24): warning C4091: ' ': ignored on left of 'int' when no variable is declared
+E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(32,18): error C2065: 'new': undeclared identifier
+E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(32,16): warning C4047: '=': 'int *' differs in levels of indirection from 'int'
+E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(32,22): error C2146: syntax error: missing ';' before identifier 'threadinfo'
+E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(32,22): error C2065: 'threadinfo': undeclared identifier
+E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(32,32): error C2109: subscript requires array or pointer type
+E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(35,23): error C2224: left of '.index' must have struct/union type
+E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(36,23): error C2224: left of '.h' must have struct/union type
+E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(38,46): error C2224: left of '.tid' must have struct/union type
+E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(36,27): error C2198: 'HANDLE CreateThread(LPSECURITY_ATTRIBUTES,SIZE_T,LPTHREAD_START_ROUTINE,LPVOID,DWORD,LPDWORD)': too few arguments for call
+E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(43,36): error C2224: left of '.h' must have struct/union type
+E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(43,9): error C2198: 'DWORD ResumeThread(HANDLE)': too few arguments for call
+E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(46,9): error C2065: 'reinterpret_cast': undeclared identifier
+E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(46,26): error C2275: 'HANDLE': expected an expression instead of a type
+E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(46,33): error C2059: syntax error: '>'
+E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(50,35): error C2224: left of '.h' must have struct/union type
+E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(50,9): error C2198: 'BOOL CloseHandle(HANDLE)': too few arguments for call
+E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(52,5): error C2065: 'delete': undeclared identifier
+E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(52,12): error C2059: syntax error: ']'
+E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(53,5): error C2065: 'delete': undeclared identifier
+E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(53,12): error C2059: syntax error: ']'
+E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(23,5): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(26,5): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\GitHub\University\OS\LAB 2\lab2\lab2\os2.c(28,10): warning C4047: 'initializing': 'int *' differs in levels of indirection from 'int'
+  Generating Code...
