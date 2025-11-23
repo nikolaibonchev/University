@@ -1,0 +1,12 @@
+#include "cuslib.h"
+
+char output_buffer[OUTPUT_MAX];
+
+void buildOutput(const char *token) {
+    if (token == NULL) return;
+
+    if (output_buffer[0] != '\0') {
+        strcat(output_buffer, " ");
+    }
+    strcat(output_buffer, token);
+}
