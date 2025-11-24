@@ -1,0 +1,73 @@
+//f dec
+char* findEnv(char *searchedEnv, char **envs);
+char* splitNameAndValue(char *env);
+char* printEnvs(envName, envValues);
+
+//функция а/main
+#include <stdio.h>
+#include "cuslib.h"
+
+int main(int argc, char *argv[], char *envp[]){
+ int i;
+ char *foundEnv;
+ char *value;
+
+ for (i = 1; argv[i] != NULL; i++) {
+  foundEnv = findEnv(argv[i], envp);
+
+  if (foundEnv != NULL) {
+   value = splitNameAndValue(foundEnv);
+   printEnvs(argv[i], value);
+  } else {
+   printf("Environment variable %s not found.\n", argv[i]);
+  };
+ };
+ 
+ return 0;
+};
+
+//функция б
+#include <string.h>
+
+char* findEnv(char *searchedEnv, char **envs){
+ int i;
+ char *env[1024];
+ char *name[256]
+
+ for(i=0; envs[i] != NULL; i++){
+  strcpy(env, envs[i]);
+  name = strtok(env, "=");
+ 
+  if(strcmp(searchevEnv, name) == 0){
+    return envs[i];
+  };
+ };
+ 
+ return 0;
+};
+
+//функция в
+#include <string.h>
+
+char* splitNameAndValue(char *env){
+ char *eq = strchr(env, '=');
+
+ if (eq) return eq + 1;
+
+ return NULL;
+};
+
+//функция г
+#include <stdio.h>
+
+char* printEnvs(envName, envValues){
+ char buffer[4096];
+ strcpy(buffer, envValues);
+
+ char *part = strtok(buffer, ";");
+
+ while (part != NULL) {
+  printf("ENV Name: %s\nENV Value: %s\n\n", envName, part);
+  part = strtok(NULL, ";");
+ }
+};
