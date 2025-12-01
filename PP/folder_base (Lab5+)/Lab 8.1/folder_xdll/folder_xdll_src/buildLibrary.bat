@@ -1,5 +1,5 @@
 @echo off
 call ..\..\..\..\env_set.bat
-cl /c /W3 /I.\ *.c
-lib /OUT:..\library_xdll.lib *.obj
+cl /c *.c
+link /DLL /OUT:..\library_xdll.dll nextToken.obj /IMPLIB:..\library_xdll.lib
 echo Library Created!

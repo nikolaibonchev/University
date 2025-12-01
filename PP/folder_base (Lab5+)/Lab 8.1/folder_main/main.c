@@ -3,7 +3,7 @@
 #include "strudata.h"
 #include "buildoutput.h"
 #include "../folder_xlib/findenv.h"
-#include "nextLib.h"
+#include "../folder_xdll/nextToken.h"
 
 int main(int argc, char *argv[], char *envp[]) {
     for (int i = 1; i < argc; i++) {
