@@ -1,6 +1,6 @@
 #include <string.h>
 
-extern "C" {
+
 char* nextToken(char *str) {
     if (str == NULL || *str == '\0') return NULL;
 
@@ -15,4 +15,3 @@ char* nextToken(char *str) {
     return NULL;
 }
 
-}

@@ -1,0 +1,59 @@
+3:
+lab3.obj : error LNK2019: unresolved external symbol "char * __cdecl findEnv(char const *,char * * const)" (?findEnv@@YAPADPBDQAPAD@Z) referenced in function _main
+  Hint on symbols that are defined and could potentially match:
+    _findEnv
+main.exe : fatal error LNK1120: 1 unresolved externals
+
+4:
+lab3.cpp
+Microsoft (R) Incremental Linker Version 14.44.35219.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+lab3.obj : error LNK2019: unresolved external symbol "char * __cdecl findEnv(char const *,char * * const)" (?findEnv@@YAPADPBDQAPAD@Z) referenced in function _main
+  Hint on symbols that are defined and could potentially match:
+    _findEnv
+lab3.obj : error LNK2019: unresolved external symbol "char * __cdecl nextToken(char *)" (?nextToken@@YAPADPAD@Z) referenced in function _main
+  Hint on symbols that are defined and could potentially match:
+    _nextToken
+lab3.obj : error LNK2019: unresolved external symbol "void __cdecl buildOutput(char const *)" (?buildOutput@@YAXPBD@Z) referenced in function _main
+  Hint on symbols that are defined and could potentially match:
+    _buildOutput
+lab3.obj : error LNK2019: unresolved external symbol "char * output_buffer" (?output_buffer@@3PADA) referenced in function _main
+  Hint on symbols that are defined and could potentially match:
+    _output_buffer
+main.exe : fatal error LNK1120: 4 unresolved externals
+
+5:
+lab3.obj : error LNK2019: unresolved external symbol "char * __cdecl nextToken(char *)" (?nextToken@@YAPADPAD@Z) referenced in function _main
+  Hint on symbols that are defined and could potentially match:
+    _nextToken
+lab3.obj : error LNK2019: unresolved external symbol "void __cdecl buildOutput(char const *)" (?buildOutput@@YAXPBD@Z) referenced in function _main
+  Hint on symbols that are defined and could potentially match:
+    _buildOutput
+lab3.obj : error LNK2019: unresolved external symbol "char * output_buffer" (?output_buffer@@3PADA) referenced in function _main
+  Hint on symbols that are defined and could potentially match:
+    _output_buffer
+main.exe : fatal error LNK1120: 3 unresolved externals
+
+6:
+lab3.obj : error LNK2019: unresolved external symbol _nextToken referenced in function _main
+  Hint on symbols that are defined and could potentially match:
+    "char * __cdecl nextToken(char *)" (?nextToken@@YAPADPAD@Z)
+lab3.obj : error LNK2019: unresolved external symbol _buildOutput referenced in function _main
+  Hint on symbols that are defined and could potentially match:
+    "void __cdecl buildOutput(char const *)" (?buildOutput@@YAXPBD@Z)
+lab3.obj : error LNK2019: unresolved external symbol _output_buffer referenced in function _main
+  Hint on symbols that are defined and could potentially match:
+    "char * output_buffer" (?output_buffer@@3PADA)
+main.exe : fatal error LNK1120: 3 unresolved externals
+
+lab3.obj : error LNK2019: unresolved external symbol _nextToken referenced in function _main
+  Hint on symbols that are defined and could potentially match:
+    "char * __cdecl nextToken(char *)" (?nextToken@@YAPADPAD@Z)
+lab3.obj : error LNK2019: unresolved external symbol _buildOutput referenced in function _main
+  Hint on symbols that are defined and could potentially match:
+    "void __cdecl buildOutput(char const *)" (?buildOutput@@YAXPBD@Z)
+lab3.obj : error LNK2019: unresolved external symbol _output_buffer referenced in function _main
+  Hint on symbols that are defined and could potentially match:
+    "char * output_buffer" (?output_buffer@@3PADA)
+main.exe : fatal error LNK1120: 3 unresolved externals

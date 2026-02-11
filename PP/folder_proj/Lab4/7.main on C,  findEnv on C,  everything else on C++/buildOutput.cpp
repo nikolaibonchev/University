@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-extern "C" {
+
 
 char output_buffer[10240];
 
@@ -12,5 +12,4 @@ void buildOutput(const char *token) {
         strcat(output_buffer, " ");
     }
     strcat(output_buffer, token);
-}
 }

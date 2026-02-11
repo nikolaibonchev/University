@@ -1,0 +1,2 @@
+﻿  findEnv.c
+E:\GitHub\University\PP\folder_base (Lab5+)\Lab 8.2\folder_xlib\folder_xlib_src\findEnv.c(14,1): error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
