@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\GitHub\\University\\PS\\PE_lab_1_1\\PE_lab_Win32CRT_proj\\Win32Console_MSVS2022\\Win32Console\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{05469AF7-343F-4A4E-A208-DF423F7DABB2}|Win32Console\\Win32Console.vcxproj|E:\\GitHub\\University\\PS\\PE_lab_1_1\\PE_lab_Win32CRT_proj\\Win32Console_MSVS2022\\Win32Console\\Win32Console\\Win32Console.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{05469AF7-343F-4A4E-A208-DF423F7DABB2}|Win32Console\\Win32Console.vcxproj|solutionrelative:Win32Console\\Win32Console.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05469AF7-343F-4A4E-A208-DF423F7DABB2}|Win32Console\\Win32Console.vcxproj|E:\\GitHub\\University\\PS\\PE_lab_1_1\\PE_lab_Win32CRT_proj\\Win32Console_MSVS2022\\Win32Console\\Win32Console\\stdafx.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{05469AF7-343F-4A4E-A208-DF423F7DABB2}|Win32Console\\Win32Console.vcxproj|solutionrelative:Win32Console\\stdafx.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05469AF7-343F-4A4E-A208-DF423F7DABB2}|Win32Console\\Win32Console.vcxproj|E:\\GitHub\\University\\PS\\PE_lab_1_1\\PE_lab_Win32CRT_proj\\Win32Console_MSVS2022\\Win32Console\\Win32Console\\stdafx.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{05469AF7-343F-4A4E-A208-DF423F7DABB2}|Win32Console\\Win32Console.vcxproj|solutionrelative:Win32Console\\stdafx.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05469AF7-343F-4A4E-A208-DF423F7DABB2}|Win32Console\\Win32Console.vcxproj|E:\\GitHub\\University\\PS\\PE_lab_1_1\\PE_lab_Win32CRT_proj\\Win32Console_MSVS2022\\Win32Console\\Win32Console\\targetver.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{05469AF7-343F-4A4E-A208-DF423F7DABB2}|Win32Console\\Win32Console.vcxproj|solutionrelative:Win32Console\\targetver.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "targetver.h",
+              "DocumentMoniker": "E:\\GitHub\\University\\PS\\PE_lab_1_1\\PE_lab_Win32CRT_proj\\Win32Console_MSVS2022\\Win32Console\\Win32Console\\targetver.h",
+              "RelativeDocumentMoniker": "Win32Console\\targetver.h",
+              "ToolTip": "E:\\GitHub\\University\\PS\\PE_lab_1_1\\PE_lab_Win32CRT_proj\\Win32Console_MSVS2022\\Win32Console\\Win32Console\\targetver.h",
+              "RelativeToolTip": "Win32Console\\targetver.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-02-11T13:15:47.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Win32Console.c",
+              "DocumentMoniker": "E:\\GitHub\\University\\PS\\PE_lab_1_1\\PE_lab_Win32CRT_proj\\Win32Console_MSVS2022\\Win32Console\\Win32Console\\Win32Console.c",
+              "RelativeDocumentMoniker": "Win32Console\\Win32Console.c",
+              "ToolTip": "E:\\GitHub\\University\\PS\\PE_lab_1_1\\PE_lab_Win32CRT_proj\\Win32Console_MSVS2022\\Win32Console\\Win32Console\\Win32Console.c",
+              "RelativeToolTip": "Win32Console\\Win32Console.c",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCkAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-02-11T10:21:55.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "stdafx.h",
+              "DocumentMoniker": "E:\\GitHub\\University\\PS\\PE_lab_1_1\\PE_lab_Win32CRT_proj\\Win32Console_MSVS2022\\Win32Console\\Win32Console\\stdafx.h",
+              "RelativeDocumentMoniker": "Win32Console\\stdafx.h",
+              "ToolTip": "E:\\GitHub\\University\\PS\\PE_lab_1_1\\PE_lab_Win32CRT_proj\\Win32Console_MSVS2022\\Win32Console\\Win32Console\\stdafx.h",
+              "RelativeToolTip": "Win32Console\\stdafx.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-02-11T10:14:00.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "stdafx.c",
+              "DocumentMoniker": "E:\\GitHub\\University\\PS\\PE_lab_1_1\\PE_lab_Win32CRT_proj\\Win32Console_MSVS2022\\Win32Console\\Win32Console\\stdafx.c",
+              "RelativeDocumentMoniker": "Win32Console\\stdafx.c",
+              "ToolTip": "E:\\GitHub\\University\\PS\\PE_lab_1_1\\PE_lab_Win32CRT_proj\\Win32Console_MSVS2022\\Win32Console\\Win32Console\\stdafx.c",
+              "RelativeToolTip": "Win32Console\\stdafx.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-02-11T10:13:57.049Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
