@@ -1,0 +1,6 @@
+﻿  main.cpp
+D:\GitHub\University\DS\Lab2\Lab2\main.cpp(40,12): warning C4302: 'type cast': truncation from 'int (__cdecl *)(void)' to 'char'
+main.obj : error LNK2019: unresolved external symbol "struct Set * __cdecl intersection_two_sets(struct Set *,struct Set *)" (?intersection_two_sets@@YAPEAUSet@@PEAU1@0@Z) referenced in function "struct Set * __cdecl Union_two_seats(struct Set *,struct Set *)" (?Union_two_seats@@YAPEAUSet@@PEAU1@0@Z)
+    Hint on symbols that are defined and could potentially match:
+      "struct Set * __cdecl intersection_two_sets(struct Set *,struct Set *,struct Set *)" (?intersection_two_sets@@YAPEAUSet@@PEAU1@00@Z)
+D:\GitHub\University\DS\Lab2\x64\Debug\Lab2.exe : fatal error LNK1120: 1 unresolved externals
