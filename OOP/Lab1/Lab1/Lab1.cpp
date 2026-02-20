@@ -21,17 +21,18 @@ public:
 	int Next(void);
 	int Prev(void);
 	int Last(void);
-	int Get(void);
+	BelRow* Get(void);
 };
 
 Bel::Bel(void) {
 	TableEnd = 0;
+	CurrentRecord = 0;
 };
 
 int Bel::Append(const char* Name, const char* Fam, unsigned long Tel) {
 	if (TableEnd >= 100) return 0;
-	strcpy(Table[TableEnd].Name, Name);
-	strcpy(Table[TableEnd].Fam, Fam);
+	strcpy_s(Table[TableEnd].Name, Name);
+	strcpy_s(Table[TableEnd].Fam, Fam);
 	Table[TableEnd].Tel = Tel;
 	TableEnd++;
 	return 1;
@@ -44,16 +45,12 @@ BelRow* Bel::FindRowByName(const char* Name) {
 };
 
 int Bel::First(void) {
-	CurrentRecord = 0;
+	return CurrentRecord = 0;
 };
 
 int Bel::Next(void) {
-	if (CurrentRecord > TableEnd) {
-		return EOT;
-	}
-	else {
-		CurrentRecord++;
-	};
+	if (CurrentRecord >= TableEnd - 1) return EOT;
+	return ++CurrentRecord;
 };
 
 int Bel::Prev(void) {
@@ -62,24 +59,46 @@ int Bel::Prev(void) {
 	}
 	else
 	{
-		CurrentRecord--;
+		return CurrentRecord--;
 	};
 };
 
 int Bel::Last(void) {
-	CurrentRecord == TableEnd;
+	if (TableEnd == 0) return EOT;
+	CurrentRecord = TableEnd - 1;
+	return CurrentRecord;
 }
 
-int Bel::Get(void) {
-
+BelRow* Bel::Get(void) {
+	if (TableEnd == 0) {
+		return NULL;
+	}
+	else
+	{
+		return &Table[CurrentRecord];
+	}
 }
 
 void main(void) {
 	Bel Tef;
 	BelRow* Arow;
-	Tef.Append("Ivan", "Petrov", 34123L);
-	Tef.First();
-	Tef.FindRowByName("Ivan");
-	Tef.Next();
 
+	Tef.Append("Ivan", "Petrov", 34123L);
+	Tef.Append("Maria", "Ivanova", 55512L);
+	Tef.Append("Georgi", "Todorov", 98765L);
+
+	printf("Content of Table:\n");
+
+	Tef.First();
+
+	for (int i = 0; i < 100; i++) {
+		Arow = Tef.Get();
+
+		if (Arow == NULL) break;
+
+		printf("Name: %-12s | Fam: %-15s | Tel: %lu\n",
+			Arow->Name, Arow->Fam, Arow->Tel);
+
+		if (Tef.Next() == -1) break;
+	}
 };
