@@ -1,47 +1,11 @@
 ﻿  Win32Console.c
-D:\GitHub\University\PS\PE_lab_1_1\PE_lab_Win32CRT_proj\Win32Console_MSVS2022\Win32Console\Win32Console\Win32Console.c(49,32): warning C4047: '=': '_TCHAR' differs in levels of indirection from '_TCHAR *'
+E:\GitHub\University\PS\PE_lab_1_1\PE_lab_Win32CRT_proj\Win32Console_MSVS2022\Win32Console\Win32Console\Win32Console.c(28,16): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   (compiling source file '/Win32Console.c')
   
-D:\GitHub\University\PS\PE_lab_1_1\PE_lab_Win32CRT_proj\Win32Console_MSVS2022\Win32Console\Win32Console\Win32Console.c(52,35): warning C4047: '=': '_TCHAR' differs in levels of indirection from '_TCHAR *'
+E:\GitHub\University\PS\PE_lab_1_1\PE_lab_Win32CRT_proj\Win32Console_MSVS2022\Win32Console\Win32Console\Win32Console.c(37,4): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   (compiling source file '/Win32Console.c')
   
-D:\GitHub\University\PS\PE_lab_1_1\PE_lab_Win32CRT_proj\Win32Console_MSVS2022\Win32Console\Win32Console\Win32Console.c(55,35): warning C4047: '=': '_TCHAR' differs in levels of indirection from '_TCHAR *'
+E:\GitHub\University\PS\PE_lab_1_1\PE_lab_Win32CRT_proj\Win32Console_MSVS2022\Win32Console\Win32Console\Win32Console.c(48,4): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   (compiling source file '/Win32Console.c')
   
-D:\GitHub\University\PS\PE_lab_1_1\PE_lab_Win32CRT_proj\Win32Console_MSVS2022\Win32Console\Win32Console\Win32Console.c(58,34): warning C4047: '=': '_TCHAR' differs in levels of indirection from '_TCHAR *'
-  (compiling source file '/Win32Console.c')
-  
-D:\GitHub\University\PS\PE_lab_1_1\PE_lab_Win32CRT_proj\Win32Console_MSVS2022\Win32Console\Win32Console\Win32Console.c(27,16): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  (compiling source file '/Win32Console.c')
-  
-D:\GitHub\University\PS\PE_lab_1_1\PE_lab_Win32CRT_proj\Win32Console_MSVS2022\Win32Console\Win32Console\Win32Console.c(34,4): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  (compiling source file '/Win32Console.c')
-  
-D:\GitHub\University\PS\PE_lab_1_1\PE_lab_Win32CRT_proj\Win32Console_MSVS2022\Win32Console\Win32Console\Win32Console.c(35,4): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  (compiling source file '/Win32Console.c')
-  
-D:\GitHub\University\PS\PE_lab_1_1\PE_lab_Win32CRT_proj\Win32Console_MSVS2022\Win32Console\Win32Console\Win32Console.c(36,4): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  (compiling source file '/Win32Console.c')
-  
-D:\GitHub\University\PS\PE_lab_1_1\PE_lab_Win32CRT_proj\Win32Console_MSVS2022\Win32Console\Win32Console\Win32Console.c(37,4): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  (compiling source file '/Win32Console.c')
-  
-D:\GitHub\University\PS\PE_lab_1_1\PE_lab_Win32CRT_proj\Win32Console_MSVS2022\Win32Console\Win32Console\Win32Console.c(38,4): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  (compiling source file '/Win32Console.c')
-  
-D:\GitHub\University\PS\PE_lab_1_1\PE_lab_Win32CRT_proj\Win32Console_MSVS2022\Win32Console\Win32Console\Win32Console.c(48,4): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  (compiling source file '/Win32Console.c')
-  
-D:\GitHub\University\PS\PE_lab_1_1\PE_lab_Win32CRT_proj\Win32Console_MSVS2022\Win32Console\Win32Console\Win32Console.c(51,4): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  (compiling source file '/Win32Console.c')
-  
-D:\GitHub\University\PS\PE_lab_1_1\PE_lab_Win32CRT_proj\Win32Console_MSVS2022\Win32Console\Win32Console\Win32Console.c(54,4): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  (compiling source file '/Win32Console.c')
-  
-D:\GitHub\University\PS\PE_lab_1_1\PE_lab_Win32CRT_proj\Win32Console_MSVS2022\Win32Console\Win32Console\Win32Console.c(57,4): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  (compiling source file '/Win32Console.c')
-  
-D:\GitHub\University\PS\PE_lab_1_1\PE_lab_Win32CRT_proj\Win32Console_MSVS2022\Win32Console\Win32Console\Win32Console.c(60,4): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  (compiling source file '/Win32Console.c')
-  
-  Win32Console.vcxproj -> D:\GitHub\University\PS\PE_lab_1_1\PE_lab_Win32CRT_proj\Win32Console_MSVS2022\Win32Console\Debug\Win32Console.exe
+  Win32Console.vcxproj -> E:\GitHub\University\PS\PE_lab_1_1\PE_lab_Win32CRT_proj\Win32Console_MSVS2022\Win32Console\Debug\Win32Console.exe

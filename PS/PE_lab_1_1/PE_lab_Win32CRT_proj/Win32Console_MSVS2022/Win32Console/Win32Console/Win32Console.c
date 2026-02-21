@@ -2,8 +2,8 @@
 //
 
 #include "stdafx.h"
-#define MAX_CHARNAME 16
-#define MAX_CHARGROUP 3
+#define MAX_CHARNAME 11
+#define MAX_CHARGROUP 4
 FILE* stream;
 
 struct Student {
@@ -11,17 +11,18 @@ struct Student {
 	_TCHAR Surname[MAX_CHARNAME];
 	_TCHAR Famname[MAX_CHARNAME];
 	_TCHAR Group[MAX_CHARGROUP];
-	int FacNum[5];
+	int FacNum;
 };
+
+int compare(const void* x_void, const void* y_void) {
+	struct Student *p1 = (struct Student*)x_void;
+	struct Student *p2 = (struct Student*)y_void;
+
+	return (p1->FacNum - p2->FacNum);
+}
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	_TCHAR name[MAX_CHARNAME];
-	_TCHAR surname[MAX_CHARNAME];
-	_TCHAR famname[MAX_CHARNAME];
-	_TCHAR group[MAX_CHARGROUP];
-	_TINT fac[5];
-
 	int count = 0;
 
 	if ((stream = fopen(argv[1], "r")) == NULL) {
@@ -30,44 +31,32 @@ int _tmain(int argc, _TCHAR* argv[])
 	else {
 		_tprintf("The file %s was opened\n", argv[1]);
 
+		struct Student temp;
+
 		while (!feof(stream)) {
-			_ftscanf(stream, "%s", name);
-			_ftscanf(stream, "%s", surname);
-			_ftscanf(stream, "%s", famname);
-			_ftscanf(stream, "%s", group);
-			_ftscanf(stream, "%d", &fac[5]);
+			_ftscanf(stream, _T("%s %s %s %s %d"), temp.Name, temp.Surname, temp.Famname, temp.Group, &temp.FacNum);
 			count++;
 		};
 
 		fseek(stream, 0, SEEK_SET);
 		printf("lines count is %d\n", count);
+
 		struct Student* array = (struct Student*)malloc(count * sizeof(struct Student));
 
 		while (!feof(stream)) {
 			static int i = 0;
-			_ftscanf(stream, "%s", name);
-			array[i].Name[MAX_CHARNAME] = name;
-
-			_ftscanf(stream, "%s", surname);
-			array[i].Surname[MAX_CHARNAME] = surname;
-
-			_ftscanf(stream, "%s", famname);
-			array[i].Famname[MAX_CHARNAME] = famname;
-
-			_ftscanf(stream, "%s", group);
-			array[i].Group[MAX_CHARGROUP] = group;
-
-			_ftscanf(stream, "%d", &fac[5]);
-			array[i].FacNum[5] = fac[5];
-
-			_tprintf("%d \n", array[i].FacNum[5]);
+			_ftscanf(stream, _T("%s %s %s %s %d"), array[i].Name, array[i].Surname, array[i].Famname, array[i].Group, &array[i].FacNum);
 			i++;
-		}
-		printf("-------");
-		for (int j = 0; j < count; j++) {
-			_tprintf("%d \n", array[j].FacNum[5]);
-		}
+		};
+
+		qsort(array, count, sizeof(struct Student), compare);
+
+		for (int k = 0; k < count; k++) {
+			_tprintf("%s, %s, %s, %s, %d \n", array[k].Name, array[k].Surname, array[k].Famname, array[k].Group, array[k].FacNum);
+		};
+
+		free(array);
 	};
 	
-		return 0;
+	return 0;
 };
