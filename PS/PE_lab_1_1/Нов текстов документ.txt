@@ -1,0 +1,16 @@
+_ftscanf(stream, "%s", a);
+_tprintf("%s ", a);
+
+_ftscanf(stream, "%s", b);
+_tprintf("%s ", b);
+
+_ftscanf(stream, "%s", c);
+_tprintf("%s ", c);
+
+_ftscanf(stream, "%s", d);
+_tprintf("%s ", d);
+
+_ftscanf(stream, "%d", &e[5]);
+_tprintf("%d ", e[5]);
+
+count++;
