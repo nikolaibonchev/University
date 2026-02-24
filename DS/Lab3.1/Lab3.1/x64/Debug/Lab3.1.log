@@ -1,0 +1,8 @@
+﻿  main.c
+D:\GitHub\University\DS\Lab3.1\Lab3.1\main.c(63,19): warning C4018: '<': signed/unsigned mismatch
+D:\GitHub\University\DS\Lab3.1\Lab3.1\main.c(64,23): warning C4018: '<': signed/unsigned mismatch
+D:\GitHub\University\DS\Lab3.1\Lab3.1\main.c(98,16): warning C4133: '=': incompatible types - from 'unsigned int *' to 'char *'
+D:\GitHub\University\DS\Lab3.1\Lab3.1\main.c(105,19): warning C4018: '<': signed/unsigned mismatch
+D:\GitHub\University\DS\Lab3.1\Lab3.1\main.c(115,19): warning C4018: '<': signed/unsigned mismatch
+D:\GitHub\University\DS\Lab3.1\Lab3.1\main.c(117,15): warning C4018: '<=': signed/unsigned mismatch
+  Lab3.1.vcxproj -> D:\GitHub\University\DS\Lab3.1\x64\Debug\Lab3.1.exe
