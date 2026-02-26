@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\GitHub\\University\\OOP\\Lab2\\",
+  "WorkspaceRootPath": "E:\\GitHub\\University\\OOP\\Lab2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BF744750-9664-473F-AD83-690D157F8096}|Lab2\\Lab2.vcxproj|D:\\GitHub\\University\\OOP\\Lab2\\Lab2\\Lab2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{BF744750-9664-473F-AD83-690D157F8096}|Lab2\\Lab2.vcxproj|E:\\GitHub\\University\\OOP\\Lab2\\Lab2\\Lab2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{BF744750-9664-473F-AD83-690D157F8096}|Lab2\\Lab2.vcxproj|solutionrelative:Lab2\\Lab2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -14,17 +14,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Lab2.cpp",
-              "DocumentMoniker": "D:\\GitHub\\University\\OOP\\Lab2\\Lab2\\Lab2.cpp",
+              "DocumentMoniker": "E:\\GitHub\\University\\OOP\\Lab2\\Lab2\\Lab2.cpp",
               "RelativeDocumentMoniker": "Lab2\\Lab2.cpp",
-              "ToolTip": "D:\\GitHub\\University\\OOP\\Lab2\\Lab2\\Lab2.cpp",
+              "ToolTip": "E:\\GitHub\\University\\OOP\\Lab2\\Lab2\\Lab2.cpp",
               "RelativeToolTip": "Lab2\\Lab2.cpp",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABsAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACEAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-02-20T08:02:29.715Z",
               "EditorCaption": ""
