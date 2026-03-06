@@ -2,9 +2,7 @@
 #include <cstring>
 
 
-class BankAccount {
-
-public:
+struct BankAccount {
     char IBAN[22];
     char type[7];
     float sum;
