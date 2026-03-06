@@ -25,6 +25,7 @@ public:
     ClientBank();
     ClientBank(char* _Name, char* _Fam, int _bankAccCount, int _clientNum);
     ~ClientBank();
+    ClientBank(const ClientBank& other);
     void AddBankAcc();
     void RemoveBankAcc(char* IBAN);
     void FindBankAcc(char* IBAN);
@@ -49,6 +50,18 @@ ClientBank::ClientBank(char* _Name, char* _Fam, int _bankAccCount, int _clientNu
     currentCount = 0;
     bankAccs = new BankAccount[bankAccCount];
 };
+
+ClientBank::ClientBank(const ClientBank& other) {
+    strcpy_s(Name, sizeof(Name), other.Name);
+    strcpy_s(Fam, sizeof(Fam), other.Fam);
+    clientNum = other.clientNum;
+    bankAccCount = other.bankAccCount;
+    currentCount = other.currentCount;
+    bankAccs = new BankAccount[bankAccCount];
+    for (int i = 0; i < currentCount; i++) {
+        bankAccs[i] = other.bankAccs[i];
+    }
+}
 
 void BankAccount::InitAcc(char* _type, char* _IBAN, float _sum) {
     strcpy_s(type, sizeof(type), _type);
@@ -170,14 +183,17 @@ int main()
     for (int i = 0; i < bankAccCount; i++) {
         user.AddBankAcc();
     }
-    user.PrintInformation();
+    //user.PrintInformation();
 
-    char iban[22] = "BG813573496840";
+    //char iban[22] = "BG813573496840";
     //user.FindBankAcc(iban);
     //user.RemoveBankAcc(iban);
-    user.AddSum(iban, 500);
+    //user.AddSum(iban, 500);
+
+    ClientBank user2(user);
 
     user.PrintInformation();
+    user2.PrintInformation();
 
     //float fullAmount = user.CombinedSum();
     //std::cout << "\n Your full amount of money of all accounts is: " << fullAmount;
