@@ -1,123 +1,129 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
-#include "main.h"
 
 
-int main(int argc, const char* argv[])
+
+typedef struct Set {
+    unsigned* array;
+    unsigned length;
+} Set;
+
+void generate_permutations(unsigned n);
+void generate_combinations(unsigned n, unsigned k);
+void print(Set* set);
+unsigned long long fact(unsigned n);
+void swap(unsigned* a, unsigned* b);
+Set* create_set(unsigned n);
+
+int main()
 {
-    srand((unsigned)time(NULL));
-    Set* A = set(3, 90, 65);
-    Set* B = set(7, 122, 97);
-    Set* C = set(5, 90, 65);
-    Set* D = set(3, 90, 65);
-
-    printf("Set A: \n");
-    print(A);
-
-    printf("Set B: \n");
-    print(B);
-
-    printf("Set C: \n");
-    print(C);
-
-    printf("Set D: \n");
-    print(D);
-
+    generate_permutations(3);
     printf("\n");
-
-    printf("Cartesian product A x A: \n\n");
-    Relation* result = cartesian_product(A, A);
-    print_cartesian_product(result);
-
-    printf("\n");
-    printf("\n");
-
-    printf("Cartesian product A x B: \n\n");
-    Relation* result1 = cartesian_product(A, B);
-    print_cartesian_product(result1);
-
-    printf("Cartesian product B x A: \n\n");
-    Relation* result2 = cartesian_product(B, A);
-    print_cartesian_product(result2);
-
-    free(A);
-    free(B);
-    free(C);
-    free(D);
-    free(result);
-    free(result1);
-    free(result2);
-
+    generate_combinations(5, 4);
     return 0;
 }
 
-Relation* cartesian_product(Set* A, Set* B) {
-    Relation* relation = (Relation*)malloc(sizeof(Relation));
-    int length = A->length * B->length;
-    relation->pairs = (Pair*)malloc(sizeof(Pair));
-    relation->length = length;
-
-    int i, j, index = 0;
-
-    for (i = 0; i < A->length; i++) {
-        for (j = 0; j < B->length; j++) {
-            relation->pairs[index].x = A->array[i];
-            relation->pairs[index].y = B->array[j];
-            index = index + 1;
-        };
-    };
-
-    return relation;
-};
-
-unsigned* random_generator(unsigned number_of_blocks, unsigned max, unsigned min) {
-    unsigned* array = (unsigned*)malloc(sizeof(unsigned) * number_of_blocks);
-    unsigned x, i = 0;
-
-    while (i < number_of_blocks) {
-        int r = rand() % (max + 1 - min) + min;
-        for (x = 0; x < i; x++) {
-            if (array[x] == r) {
-                break;
-            };
-        };
-
-        if (x == i) {
-            array[i] = r;
-            i = i + 1;
-        }
-    };
-
-    return array;
-};
-
-Set* set(unsigned numeber_of_elements, unsigned max, unsigned min) {
+Set* create_set(unsigned n) {
     Set* set = (Set*)malloc(sizeof(Set));
-    set->length = numeber_of_elements;
-    set->array = random_generator(set->length, max, min);
+    set->array = (unsigned*)malloc(sizeof(unsigned)*n);
+    set->length = n;
+
+    unsigned i;
+    for (i = 0; i < n; i++) {
+        set->array[i] = i + 1;
+    }
 
     return set;
-};
+}
 
 void print(Set* set) {
-    int i;
+    unsigned i;
     for (i = 0; i < set->length; i++) {
-        printf("%c\t", set->array[i]);
-    };
+        printf("%d", set->array[i]);
+    }
     printf("\n");
-};
+}
 
-void print_cartesian_product(Relation* result) {
-    printf("Length pf cartesian product is %d.\n", result->length);
-    int i;
-    printf("{");
-    for (i = 0; i < result->length; i++) {
-        printf("(%c, %c)", result->pairs[i].x, result->pairs[i].y);
-        if (i <= result->length - 2) {
-            printf(",");
-        };
-    };
+unsigned long long factorial(unsigned x) {
+    if (x == 0) {
+        return 1;
+    }
 
-    printf("}\n");
-};
+    return (x * factorial(x - 1));
+}
+
+unsigned long long fact(unsigned n) {
+    unsigned long long fact = 1, i;
+
+    if (n < 0) {
+        return 0;
+    }
+    for (i = 2; i <= n; i++) {
+        fact = fact * i;
+    }
+    return fact;
+}
+
+void swap(unsigned* a, unsigned* b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+void generate_permutations(unsigned n) {
+    int i, m, k, p, q;
+    Set* set = create_set(n);
+    print(set);
+
+    for (i = 1; i < factorial(n); i++) {
+        m = n - 2;
+        while (*(set->array + m) > *(set->array + m + 1)) {
+            m = m - 1;
+        }
+
+        k = n - 1;
+
+        while (*(set->array + m) > *(set->array + k)) {
+            k = k - 1;
+         }
+
+        swap(&*(set->array + m), &*(set->array + k));
+        p = m + 1;
+        q = n - 1;
+        while (p < q) {
+            swap(&*(set->array + p), &*(set->array + q));
+            p = q + 1;
+            q = q - 1;
+
+        }
+        printf("Permutations:\n");
+        print(set);
+    }
+}
+
+unsigned long long combinations(unsigned n, unsigned k) {
+    return fact(n) / (fact(k) * fact(n - k));
+}
+
+void generate_combinations(unsigned n, unsigned k) {
+    unsigned i, j, max_val, m;
+
+    Set* set = create_set(k);
+    printf("Mnojestvoto ot k-ti red: \n");
+    print(set);
+
+    for (i = 2; i <= combinations(n, k); i++) {
+        m = k - 1;
+        max_val = n;
+        while (*(set->array + m) == max_val) {
+            m = m - 1;
+            max_val = max_val - 1;
+        }
+        *(set->array + m) = *(set->array + m) + 1;
+        for (j = m + 1; j <= k; j++) {
+            *(set->array + j) = *(set->array + j - 1) + 1;
+        }
+        printf("Combinations: \n");
+        print(set);
+    }
+}
