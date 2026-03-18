@@ -23,6 +23,7 @@ public:
     ClientBank(char* _Name, char* _Fam, int _bankAccCount, int _clientNum);
     ~ClientBank();
     ClientBank(const ClientBank& other);
+    ClientBank& operator=(const ClientBank& other);
     void AddBankAcc();
     void RemoveBankAcc(char* IBAN);
     void FindBankAcc(char* IBAN);
@@ -58,6 +59,24 @@ ClientBank::ClientBank(const ClientBank& other) {
     for (int i = 0; i < currentCount; i++) {
         bankAccs[i] = other.bankAccs[i];
     }
+}
+
+ClientBank& ClientBank::operator=(const ClientBank& other) {
+    if (this != &other) { 
+        delete[] bankAccs;
+
+        strcpy_s(Name, sizeof(Name), other.Name);
+        strcpy_s(Fam, sizeof(Fam), other.Fam);
+        clientNum = other.clientNum;
+        bankAccCount = other.bankAccCount;
+        currentCount = other.currentCount;
+
+        bankAccs = new BankAccount[bankAccCount];
+        for (int i = 0; i < currentCount; i++) {
+            bankAccs[i] = other.bankAccs[i];
+        }
+    }
+    return *this;
 }
 
 void BankAccount::InitAcc(char* _type, char* _IBAN, float _sum) {
@@ -160,22 +179,25 @@ class Bank {
 private:
     ClientBank* Table;
     int TableEnd;
+    int size;
 
 public:
     Bank();
-    Bank(int arrElCount, int clientCount);
+    Bank(int clientCount);
     ~Bank();
     void Append(ClientBank newClient);
 };
 
 Bank::Bank() {
     TableEnd = 0;
+    size = 0;
     Table = nullptr;
 };
 
-Bank::Bank(int arrElCount, int clientCount) {
+Bank::Bank(int clientCount) {
     TableEnd = clientCount;
-    Table = new ClientBank[arrElCount];
+    Table = new ClientBank[TableEnd];
+    size = 0;
 };
 
 Bank::~Bank() {
@@ -183,12 +205,25 @@ Bank::~Bank() {
 };
 
 void Bank::Append(ClientBank newClient) {
-    ClientBank temp[sizeof(Table) * 2];
-    for (int i = 0; i < TableEnd; i++) {
-        temp[i] = Table[i];
+    int newSize = 0;
+    if (size >= TableEnd) {
+        if(TableEnd == 0){
+            newSize = 2;
+        }
+        else{
+            newSize = TableEnd * 2;
+        }
+        ClientBank* newTable = new ClientBank[newSize];
+        for (int i = 0; i < size; i++) {
+            newTable[i] = Table[i];
+        }
+        delete[] Table;
+        Table = newTable;
+        TableEnd = newSize;
     }
-    free(Table);
-    Table = (ClientBank)realloc(temp, sizeof(temp));
+    Table[size] = newClient;
+    size++;
+    std::cout << "\nClient successfully appended to the Bank!\n";
 };
 
 int main()

@@ -1,0 +1,4 @@
+﻿  Lab5.cpp
+D:\GitHub\University\DS\Lab5\Lab5\Lab5.cpp(30,36): warning C4244: '=': conversion from 'double' to 'unsigned int', possible loss of data
+D:\GitHub\University\DS\Lab5\Lab5\Lab5.cpp(36,43): warning C4244: '=': conversion from 'double' to 'unsigned int', possible loss of data
+  Lab5.vcxproj -> D:\GitHub\University\DS\Lab5\x64\Debug\Lab5.exe

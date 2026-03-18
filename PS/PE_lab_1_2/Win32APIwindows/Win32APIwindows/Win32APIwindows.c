@@ -20,8 +20,10 @@ ATOM				MyRegisterClass ( HINSTANCE ) ;
 BOOL				InitInstance ( HINSTANCE , int ) ;
 LRESULT	CALLBACK	WndProc ( HWND , UINT , WPARAM , LPARAM ) ;
 INT_PTR	CALLBACK	About ( HWND , UINT , WPARAM , LPARAM ) ;
-
-
+int countMouseL;
+int countMouseR;
+int countMouseM;
+int countAllMsg;
 
 //
 //  FUNCTION: _tWinMain
