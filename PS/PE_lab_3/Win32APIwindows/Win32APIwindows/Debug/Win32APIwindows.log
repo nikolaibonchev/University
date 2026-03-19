@@ -1,0 +1,11 @@
+﻿  stdafx.c
+  Win32APIwindows.c
+E:\GitHub\University\PS\PE_lab_3\Win32APIwindows\Win32APIwindows\Win32APIwindows.c(199,4): warning C4477: 'swprintf_s' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'unsigned short *'
+  (compiling source file '/Win32APIwindows.c')
+  
+E:\GitHub\University\PS\PE_lab_3\Win32APIwindows\Win32APIwindows\Win32APIwindows.c(201,4): warning C4474: 'swprintf_s' : too many arguments passed for format string
+  (compiling source file '/Win32APIwindows.c')
+      E:\GitHub\University\PS\PE_lab_3\Win32APIwindows\Win32APIwindows\Win32APIwindows.c(201,4):
+      placeholders and their parameters expect 1 variadic arguments, but 9 were provided
+  
+  Win32APIwindows.vcxproj -> E:\GitHub\University\PS\PE_lab_3\Win32APIwindows\Debug\Win32APIwindows.exe
