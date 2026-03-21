@@ -1,10 +1,21 @@
 ﻿  Win32APIwindows.c
-D:\GitHub\University\PS\PE_lab_4\Win32APIwindows\Win32APIwindows\Win32APIwindows.c(234,4): warning C4477: 'swprintf_s' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'unsigned short *'
+D:\GitHub\University\PS\PE_lab_4\Win32APIwindows\Win32APIwindows\Win32APIwindows.c(118,9): warning C4101: 'hWndChild': unreferenced local variable
   (compiling source file '/Win32APIwindows.c')
   
-D:\GitHub\University\PS\PE_lab_4\Win32APIwindows\Win32APIwindows\Win32APIwindows.c(236,4): warning C4474: 'swprintf_s' : too many arguments passed for format string
+D:\GitHub\University\PS\PE_lab_4\Win32APIwindows\Win32APIwindows\Win32APIwindows.c(237,4): warning C4477: 'swprintf_s' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'unsigned short *'
   (compiling source file '/Win32APIwindows.c')
-      D:\GitHub\University\PS\PE_lab_4\Win32APIwindows\Win32APIwindows\Win32APIwindows.c(236,4):
+  
+D:\GitHub\University\PS\PE_lab_4\Win32APIwindows\Win32APIwindows\Win32APIwindows.c(239,4): warning C4474: 'swprintf_s' : too many arguments passed for format string
+  (compiling source file '/Win32APIwindows.c')
+      D:\GitHub\University\PS\PE_lab_4\Win32APIwindows\Win32APIwindows\Win32APIwindows.c(239,4):
+      placeholders and their parameters expect 1 variadic arguments, but 9 were provided
+  
+D:\GitHub\University\PS\PE_lab_4\Win32APIwindows\Win32APIwindows\Win32APIwindows.c(322,4): warning C4477: 'swprintf_s' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'unsigned short *'
+  (compiling source file '/Win32APIwindows.c')
+  
+D:\GitHub\University\PS\PE_lab_4\Win32APIwindows\Win32APIwindows\Win32APIwindows.c(324,4): warning C4474: 'swprintf_s' : too many arguments passed for format string
+  (compiling source file '/Win32APIwindows.c')
+      D:\GitHub\University\PS\PE_lab_4\Win32APIwindows\Win32APIwindows\Win32APIwindows.c(324,4):
       placeholders and their parameters expect 1 variadic arguments, but 9 were provided
   
   Win32APIwindows.vcxproj -> D:\GitHub\University\PS\PE_lab_4\Win32APIwindows\Debug\Win32APIwindows.exe

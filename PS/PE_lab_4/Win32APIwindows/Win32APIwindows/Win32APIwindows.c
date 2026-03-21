@@ -12,6 +12,7 @@
 HINSTANCE			hInst ;										// current instance
 TCHAR				szTitle[] = _T("Win32APIwindows") ;			// The title bar text
 TCHAR				szWindowClass[] = _T("WIN32APIWINDOWS") ;	// the main window class name
+TCHAR				szChildWindowClass[] = _T("CHILDWINDOW");
 
 
 // Forward declarations of functions included in this code module
@@ -20,6 +21,7 @@ ATOM				MyRegisterClass ( HINSTANCE ) ;
 BOOL				InitInstance ( HINSTANCE , int ) ;
 LRESULT	CALLBACK	WndProc ( HWND , UINT , WPARAM , LPARAM ) ;
 INT_PTR	CALLBACK	About ( HWND , UINT , WPARAM , LPARAM ) ;
+LRESULT CALLBACK	ChildWndProc(HWND, UINT, WPARAM, LPARAM);
 
 //
 //  FUNCTION: _tWinMain
@@ -87,6 +89,12 @@ WNDCLASSEX			wcex ;
 	wcex.lpszClassName	= szWindowClass ;
 	wcex.hIconSm		= LoadIcon(wcex.hInstance,MAKEINTRESOURCE(IDI_SMALL)) ;
 
+	RegisterClassEx(&wcex);
+
+	wcex.lpfnWndProc = ChildWndProc;
+	wcex.lpszClassName = szChildWindowClass;
+
+
 	return RegisterClassEx(&wcex) ;
 }
 
@@ -114,22 +122,9 @@ HWND				hWndChild;
 	hWnd = CreateWindow(szWindowClass,szTitle,WS_OVERLAPPEDWINDOW,
 						CW_USEDEFAULT,0,CW_USEDEFAULT,0,NULL,NULL,hInstance,NULL) ;
 
-	hWndChild = CreateWindow(
-		szWindowClass,
-		NULL,
-		WS_CHILD | WS_VISIBLE | WS_BORDER,
-		50, 50, 300, 200,
-		hWnd,
-		NULL,
-		hInstance,
-		NULL
-	);
 
 	if ( hWnd == NULL )
 		return FALSE ;
-
-	ShowWindow(hWndChild, nCmdShow);
-	UpdateWindow(hWndChild);
 
 	ShowWindow(hWnd,nCmdShow) ;
 	UpdateWindow(hWnd) ;
@@ -175,25 +170,36 @@ HDC					hdc2;
     static int middleMouseBtnClickCount = 0;
 	static HWND hWndChild;
 
-	static POINTS ptsBegin;        // beginning point 
-	static POINTS ptsEnd;          // new endpoint 
-	static POINTS ptsPrevEnd;      // previous endpoint 
-	static BOOL fPrevLine = FALSE; // previous line flag 
-
 	totalMsgCount++;
 
 	switch ( message )
 	{
+	case WM_CREATE:
+		hWndChild = CreateWindow(
+			szChildWindowClass,
+			NULL,
+			WS_CHILD | WS_VISIBLE | WS_BORDER,
+			50, 50, 300, 200,
+			hWnd,
+			NULL,
+			hInst,
+			NULL
+		);
+
+		ShowWindow(hWndChild, SW_HIDE);
+
 	case WM_MOUSEMOVE:
 		mouseMoveCount++;
 		break;
 	case WM_LBUTTONDOWN:
 		leftMouseBtnClickCount++;
 		OutputDebugString(TEXT("Left mouse button was clicked!\n"));
+		ShowWindow(hWndChild, SW_SHOW);
 		break;
 	case WM_RBUTTONDOWN:
 		rightMouseBtnClickCount++;
 		OutputDebugString(TEXT("Right mouse button was clicked!\n"));
+		ShowWindow(hWndChild, SW_HIDE);
 		break;
 	case WM_MBUTTONDOWN:
 		middleMouseBtnClickCount++;
@@ -248,6 +254,91 @@ HDC					hdc2;
 
 	return 0 ;
 }
+
+LRESULT	CALLBACK	ChildWndProc
+(
+	HWND				hWnd,
+	UINT				message,
+	WPARAM				wParam,
+	LPARAM				lParam
+)
+{
+	int					wmId, wmEvent;
+	PAINTSTRUCT			ps;
+	HDC					hdc2;
+
+	TCHAR debugOutput[256];
+	static int totalMsgCount = 0;
+	static int mouseMoveCount = 0;
+	static int leftMouseBtnClickCount = 0;
+	static int rightMouseBtnClickCount = 0;
+	static int middleMouseBtnClickCount = 0;
+	static HWND hWndChild;
+
+	totalMsgCount++;
+
+	switch (message)
+	{
+	case WM_MOUSEMOVE:
+		mouseMoveCount++;
+		break;
+	case WM_LBUTTONDOWN:
+		leftMouseBtnClickCount++;
+		OutputDebugString(TEXT("Child's Left mouse button was clicked!\n"));
+		break;
+	case WM_RBUTTONDOWN:
+		rightMouseBtnClickCount++;
+		OutputDebugString(TEXT("Child's Right mouse button was clicked!\n"));
+		break;
+	case WM_MBUTTONDOWN:
+		middleMouseBtnClickCount++;
+		OutputDebugString(TEXT("Child's Middle mouse button was clicked!\n"));
+		break;
+	case WM_COMMAND:
+		wmId = LOWORD(wParam);
+		wmEvent = HIWORD(wParam);
+		// Parse the menu selections
+		switch (wmId)
+		{
+		case IDM_ABOUT:
+			DialogBox(hInst, MAKEINTRESOURCE(IDD_ABOUTBOX), hWnd, About);
+			break;
+		case IDM_EXIT:
+			DestroyWindow(hWnd);
+			break;
+		default:
+			return DefWindowProc(hWnd, message, wParam, lParam);
+		}
+		break;
+
+	case WM_PAINT:
+		hdc2 = BeginPaint(hWndChild, &ps);
+		EndPaint(hWndChild, &ps);
+
+		break;
+
+	case WM_DESTROY:
+		_stprintf_s(debugOutput, 256,
+			TEXT("Total count: %d\n"),
+			TEXT("Total Mouse movement count: %d\n"),
+			TEXT("Total Left Mouse button clicks count: %d\n"),
+			TEXT("Total Right Mouse button clicks count: %d\n"),
+			TEXT("Total Middle Mouse button clicks count: %d\n"),
+			totalMsgCount,
+			mouseMoveCount,
+			leftMouseBtnClickCount,
+			rightMouseBtnClickCount,
+			middleMouseBtnClickCount
+		);
+		break;
+
+	default:
+		return DefWindowProc(hWnd, message, wParam, lParam);
+	}
+
+	return 0;
+}
+
 
 
 //
