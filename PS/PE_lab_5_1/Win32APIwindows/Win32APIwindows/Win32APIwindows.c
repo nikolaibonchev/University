@@ -6,7 +6,6 @@
 
 #include "Win32APIwindows.h"
 
-
 // Global Variables
 
 HINSTANCE			hInst ;										// current instance
@@ -23,6 +22,14 @@ BOOL				InitInstance ( HINSTANCE , int ) ;
 LRESULT	CALLBACK	WndProc ( HWND , UINT , WPARAM , LPARAM ) ;
 INT_PTR	CALLBACK	About ( HWND , UINT , WPARAM , LPARAM ) ;
 LRESULT CALLBACK	ChildWndProc(HWND, UINT, WPARAM, LPARAM);
+
+BOOL Ellipse(
+	[in] HDC hdc,
+	[in] int left,
+	[in] int top,
+	[in] int right,
+	[in] int bottom
+);
 
 //
 //  FUNCTION: _tWinMain
@@ -180,7 +187,7 @@ HDC					hdc2;
 			szChildWindowClass,
 			szChildTitle,
 			WS_CHILD|WS_CAPTION,
-			50, 50, 300, 200,
+			0, 0, 300, 200,
 			hWnd,
 			NULL,
 			hInst,
