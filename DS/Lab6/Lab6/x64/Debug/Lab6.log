@@ -1,0 +1,12 @@
+﻿  Lab6.c
+D:\GitHub\University\DS\Lab6\Lab6\Lab6.c(3,30): warning C4081: expected 'newline'; found ';'
+D:\GitHub\University\DS\Lab6\Lab6\Lab6.c(64,23): warning C4018: '>': signed/unsigned mismatch
+D:\GitHub\University\DS\Lab6\Lab6\Lab6.c(80,19): warning C4018: '<': signed/unsigned mismatch
+D:\GitHub\University\DS\Lab6\Lab6\Lab6.c(84,19): warning C4018: '<': signed/unsigned mismatch
+D:\GitHub\University\DS\Lab6\Lab6\Lab6.c(86,23): warning C4018: '<': signed/unsigned mismatch
+D:\GitHub\University\DS\Lab6\Lab6\Lab6.c(119,30): warning C4018: '<=': signed/unsigned mismatch
+D:\GitHub\University\DS\Lab6\Lab6\Lab6.c(119,54): warning C4018: '<=': signed/unsigned mismatch
+D:\GitHub\University\DS\Lab6\Lab6\Lab6.c(157,19): warning C4018: '<': signed/unsigned mismatch
+D:\GitHub\University\DS\Lab6\Lab6\Lab6.c(161,19): warning C4018: '<': signed/unsigned mismatch
+D:\GitHub\University\DS\Lab6\Lab6\Lab6.c(162,23): warning C4018: '<': signed/unsigned mismatch
+  Lab6.vcxproj -> D:\GitHub\University\DS\Lab6\x64\Debug\Lab6.exe

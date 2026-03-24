@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\GitHub\\University\\DS\\Lab6\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F52C1BA1-3CC3-4B93-8E24-2FDE26520659}|Lab6\\Lab6.vcxproj|D:\\GitHub\\University\\DS\\Lab6\\Lab6\\Lab6.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F52C1BA1-3CC3-4B93-8E24-2FDE26520659}|Lab6\\Lab6.vcxproj|solutionrelative:Lab6\\Lab6.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F52C1BA1-3CC3-4B93-8E24-2FDE26520659}|Lab6\\Lab6.vcxproj|D:\\GitHub\\University\\DS\\Lab6\\Lab6\\textfile.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F52C1BA1-3CC3-4B93-8E24-2FDE26520659}|Lab6\\Lab6.vcxproj|solutionrelative:Lab6\\textfile.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "textfile.txt",
+              "DocumentMoniker": "D:\\GitHub\\University\\DS\\Lab6\\Lab6\\textfile.txt",
+              "RelativeDocumentMoniker": "Lab6\\textfile.txt",
+              "ToolTip": "D:\\GitHub\\University\\DS\\Lab6\\Lab6\\textfile.txt",
+              "RelativeToolTip": "Lab6\\textfile.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-03-24T09:35:55.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Lab6.c",
+              "DocumentMoniker": "D:\\GitHub\\University\\DS\\Lab6\\Lab6\\Lab6.c",
+              "RelativeDocumentMoniker": "Lab6\\Lab6.c",
+              "ToolTip": "D:\\GitHub\\University\\DS\\Lab6\\Lab6\\Lab6.c",
+              "RelativeToolTip": "Lab6\\Lab6.c",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACQAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-03-24T09:31:05.147Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
