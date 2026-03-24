@@ -3,7 +3,7 @@
 
 
 #include "stdafx.h"
-
+#include <windowsx.h>
 #include "Win32APIwindows.h"
 
 // Global Variables
@@ -22,14 +22,6 @@ BOOL				InitInstance ( HINSTANCE , int ) ;
 LRESULT	CALLBACK	WndProc ( HWND , UINT , WPARAM , LPARAM ) ;
 INT_PTR	CALLBACK	About ( HWND , UINT , WPARAM , LPARAM ) ;
 LRESULT CALLBACK	ChildWndProc(HWND, UINT, WPARAM, LPARAM);
-
-BOOL Ellipse(
-	[in] HDC hdc,
-	[in] int left,
-	[in] int top,
-	[in] int right,
-	[in] int bottom
-);
 
 //
 //  FUNCTION: _tWinMain
@@ -177,6 +169,7 @@ HDC					hdc2;
     static int rightMouseBtnClickCount = 0;
     static int middleMouseBtnClickCount = 0;
 	static HWND hWndChild;
+	HPEN pen = CreatePen(PS_SOLID, 5, RGB(255, 0, 0));
 
 	totalMsgCount++;
 
@@ -199,15 +192,30 @@ HDC					hdc2;
 	case WM_MOUSEMOVE:
 		mouseMoveCount++;
 		break;
-	case WM_LBUTTONDOWN:
+	case WM_LBUTTONDOWN: {
+
+		POINT p;
+
+		p.x = GET_X_LPARAM(lParam);
+		p.y = GET_Y_LPARAM(lParam);
+
+		PhysicalToLogicalPoint(hWnd, &p);
+		int radius = 20;
+
 		leftMouseBtnClickCount++;
 		OutputDebugString(TEXT("Left mouse button was clicked!\n"));
-		ShowWindow(hWndChild, SW_SHOW);
+		//ShowWindow(hWndChild, SW_SHOW);
+		hdc = GetDC(hWnd);
+		SelectObject(hdc, pen);
+		Ellipse(hdc , p.x - radius, p.y - radius, p.x + radius, p.y + radius);
+		ReleaseDC(hWnd, hdc);
 		break;
+	}
 	case WM_RBUTTONDOWN:
 		rightMouseBtnClickCount++;
 		OutputDebugString(TEXT("Right mouse button was clicked!\n"));
-		ShowWindow(hWndChild, SW_HIDE);
+		//DeleteObject();
+		//ShowWindow(hWndChild, SW_HIDE);
 		break;
 	case WM_MBUTTONDOWN:
 		middleMouseBtnClickCount++;
