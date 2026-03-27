@@ -200,7 +200,7 @@ HDC					hdc2;
 		p.y = GET_Y_LPARAM(lParam);
 
 		PhysicalToLogicalPoint(hWnd, &p);
-		int radius = 20;
+		int radius = 100;
 
 		leftMouseBtnClickCount++;
 		OutputDebugString(TEXT("Left mouse button was clicked!\n"));
@@ -211,12 +211,13 @@ HDC					hdc2;
 		ReleaseDC(hWnd, hdc);
 		break;
 	}
-	case WM_RBUTTONDOWN:
+	case WM_RBUTTONDOWN:{
 		rightMouseBtnClickCount++;
 		OutputDebugString(TEXT("Right mouse button was clicked!\n"));
-		//DeleteObject();
 		//ShowWindow(hWndChild, SW_HIDE);
+		InvalidateRect(hWnd, NULL, TRUE);
 		break;
+	}
 	case WM_MBUTTONDOWN:
 		middleMouseBtnClickCount++;
 		OutputDebugString(TEXT("Middle mouse button was clicked!\n"));
