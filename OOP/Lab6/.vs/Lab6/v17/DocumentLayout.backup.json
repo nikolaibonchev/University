@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\GitHub\\University\\OOP\\Lab6\\",
+  "WorkspaceRootPath": "E:\\GitHub\\University\\OOP\\Lab6\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2CB160F8-6793-4A5B-B8AB-A9E4134E9DD6}|Lab6\\Lab6.vcxproj|D:\\GitHub\\University\\OOP\\Lab6\\Lab6\\Lab6.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{2CB160F8-6793-4A5B-B8AB-A9E4134E9DD6}|Lab6\\Lab6.vcxproj|E:\\GitHub\\University\\OOP\\Lab6\\Lab6\\Lab6.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{2CB160F8-6793-4A5B-B8AB-A9E4134E9DD6}|Lab6\\Lab6.vcxproj|solutionrelative:Lab6\\Lab6.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
@@ -27,22 +27,17 @@
               "DocumentIndex": 1,
               "Title": "Lab3.cpp",
               "DocumentMoniker": "D:\\GitHub\\University\\OOP\\Lab3\\Lab3\\Lab3.cpp",
-              "RelativeDocumentMoniker": "..\\Lab3\\Lab3\\Lab3.cpp",
               "ToolTip": "D:\\GitHub\\University\\OOP\\Lab3\\Lab3\\Lab3.cpp",
-              "RelativeToolTip": "..\\Lab3\\Lab3\\Lab3.cpp",
               "ViewState": "AgIAAHsAAAAAAAAAAAAAAC0AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-03-20T08:39:52.683Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-20T08:39:52.683Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Lab5.cpp",
               "DocumentMoniker": "D:\\GitHub\\University\\OOP\\Lab5\\Lab5\\Lab5.cpp",
-              "RelativeDocumentMoniker": "..\\Lab5\\Lab5\\Lab5.cpp",
               "ToolTip": "D:\\GitHub\\University\\OOP\\Lab5\\Lab5\\Lab5.cpp",
-              "RelativeToolTip": "..\\Lab5\\Lab5\\Lab5.cpp",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-03-20T08:18:57.59Z"
@@ -51,9 +46,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Lab6.cpp",
-              "DocumentMoniker": "D:\\GitHub\\University\\OOP\\Lab6\\Lab6\\Lab6.cpp",
+              "DocumentMoniker": "E:\\GitHub\\University\\OOP\\Lab6\\Lab6\\Lab6.cpp",
               "RelativeDocumentMoniker": "Lab6\\Lab6.cpp",
-              "ToolTip": "D:\\GitHub\\University\\OOP\\Lab6\\Lab6\\Lab6.cpp",
+              "ToolTip": "E:\\GitHub\\University\\OOP\\Lab6\\Lab6\\Lab6.cpp",
               "RelativeToolTip": "Lab6\\Lab6.cpp",
               "ViewState": "AgIAAE0AAAAAAAAAAAAAAF4AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
