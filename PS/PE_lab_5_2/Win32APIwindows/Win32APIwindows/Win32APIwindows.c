@@ -169,10 +169,13 @@ HDC					hdc2;
     static int rightMouseBtnClickCount = 0;
     static int middleMouseBtnClickCount = 0;
 	static HWND hWndChild;
-	HPEN pen = CreatePen(PS_SOLID, 5, RGB(255, 0, 0));
-		POINT p;
+	
+		static POINT p[100];
+		static POINT last8[8];
 		static int counter = 0;
+		static int circlesCount = 0;
 		static BOOL hasClicked = FALSE;
+		static BOOL showCircles = TRUE;
 
 	totalMsgCount++;
 
@@ -196,11 +199,25 @@ HDC					hdc2;
 		mouseMoveCount++;
 		break;
 	case WM_LBUTTONDOWN: {
+		showCircles = TRUE;
 
-
-		p.x = GET_X_LPARAM(lParam);
-		p.y = GET_Y_LPARAM(lParam);
+		p[counter].x = GET_X_LPARAM(lParam);
+		p[counter].y = GET_Y_LPARAM(lParam);
 		hasClicked = TRUE;
+
+		if (circlesCount < 8) {
+			last8[circlesCount].x = GET_X_LPARAM(lParam);
+			last8[circlesCount].y = GET_Y_LPARAM(lParam);
+			circlesCount++;
+		}
+		else
+		{
+			for (int i = 0; i < circlesCount; i++) {
+				last8[circlesCount] = last8[circlesCount + 1];
+			}
+			last8[circlesCount].x = GET_X_LPARAM(lParam);
+			last8[circlesCount].y = GET_Y_LPARAM(lParam);
+		}
 
 		leftMouseBtnClickCount++;
 		OutputDebugString(TEXT("Left mouse button was clicked!\n"));
@@ -210,15 +227,35 @@ HDC					hdc2;
 		break;
 	}
 	case WM_RBUTTONDOWN:{
+		showCircles = FALSE;
+		for (int i = 0; i < counter; i++) {
+			p[i].x = NULL;
+			p[i].y = NULL;
+		}
+
 		rightMouseBtnClickCount++;
 		OutputDebugString(TEXT("Right mouse button was clicked!\n"));
 		//ShowWindow(hWndChild, SW_HIDE);
+		counter = 0;
 		InvalidateRect(hWnd, NULL, TRUE);
 		break;
 	}
 	case WM_MBUTTONDOWN:
+		showCircles = TRUE;
+
+		for (int i = 0; i < counter; i++) {
+			p[i].x = NULL;
+			p[i].y = NULL;
+		}
+		counter = 8;
+
+		for (int i = 0; i < circlesCount; i++) {
+			p[i] = last8[i];
+		}
+
 		middleMouseBtnClickCount++;
 		OutputDebugString(TEXT("Middle mouse button was clicked!\n"));
+		InvalidateRect(hWnd, NULL, TRUE);
 		break;
 	case WM_COMMAND :
 		wmId    = LOWORD(wParam) ;
@@ -240,17 +277,20 @@ HDC					hdc2;
 	case WM_PAINT: {
 		hdc = BeginPaint(hWnd, &ps);
 		// Add any drawing code here
-		PhysicalToLogicalPoint(hWnd, &p);
 
-		if (hasClicked == TRUE) {
+		if (hasClicked == TRUE && showCircles == TRUE) {
 			int radius = 100;
-			SelectObject(hdc, pen);
-			for (int i = 0; i < sizeof(p); i++) {
-				Ellipse(hdc, p.x - radius, p.y - radius, p.x + radius, p.y + radius);
+			HPEN pen = CreatePen(PS_SOLID, 5, RGB(255, 0, 0));
+			HPEN hOldPen = (HPEN)SelectObject(hdc, pen);
+
+			for (int i = 0; i < counter; i++) {
+				Ellipse(hdc, p[i].x - radius, p[i].y - radius, p[i].x + radius, p[i].y + radius);
 			}
+
+			SelectObject(hdc, hOldPen);
 			DeleteObject(pen);
-			EndPaint(hWnd, &ps);
 		}
+		EndPaint(hWnd, &ps);
 
 		hdc2 = BeginPaint(hWndChild, &ps);
 		EndPaint(hWndChild, &ps);
