@@ -176,6 +176,7 @@ HDC					hdc2;
 		static int circlesCount = 0;
 		static BOOL hasClicked = FALSE;
 		static BOOL showCircles = TRUE;
+		static BOOL showLast8 = FALSE;
 
 	totalMsgCount++;
 
@@ -241,14 +242,15 @@ HDC					hdc2;
 		break;
 	}
 	case WM_MBUTTONDOWN:
-		showCircles = TRUE;
+		showCircles = FALSE;
+		showLast8 = TRUE;
 
 		for (int i = 0; i < counter; i++) {
 			p[i].x = NULL;
 			p[i].y = NULL;
 		}
 		counter = 8;
-
+		
 		for (int i = 0; i < circlesCount; i++) {
 			p[i] = last8[i];
 		}
@@ -283,8 +285,15 @@ HDC					hdc2;
 			HPEN pen = CreatePen(PS_SOLID, 5, RGB(255, 0, 0));
 			HPEN hOldPen = (HPEN)SelectObject(hdc, pen);
 
-			for (int i = 0; i < counter; i++) {
-				Ellipse(hdc, p[i].x - radius, p[i].y - radius, p[i].x + radius, p[i].y + radius);
+			if (showLast8 == TRUE) {
+				for (int i = 0; i < circlesCount; i++) {
+					Ellipse(hdc, last8[i].x - radius, last8[i].y - radius, last8[i].x + radius, last8[i].y + radius);
+				}
+			}
+			else {
+				for (int i = 0; i < counter; i++) {
+					Ellipse(hdc, p[i].x - radius, p[i].y - radius, p[i].x + radius, p[i].y + radius);
+				}
 			}
 
 			SelectObject(hdc, hOldPen);
