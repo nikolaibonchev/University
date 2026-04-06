@@ -3,8 +3,11 @@
   "WorkspaceRootPath": "E:\\GitHub\\University\\DS\\Lab7\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1E95DA89-FD16-4E74-ABBF-B58B46211C22}|Lab7\\Lab7.vcxproj|E:\\GitHub\\University\\DS\\Lab7\\Lab7\\Lab7.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1E95DA89-FD16-4E74-ABBF-B58B46211C22}|Lab7\\Lab7.vcxproj|solutionrelative:Lab7\\Lab7.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{8FCFA2A4-84FA-4313-B357-66A1217264E6}|Lab7\\Lab7.vcxproj|E:\\GitHub\\University\\DS\\Lab7\\Lab7\\Lab7.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8FCFA2A4-84FA-4313-B357-66A1217264E6}|Lab7\\Lab7.vcxproj|solutionrelative:Lab7\\Lab7.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nikie\\Downloads\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +17,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "main.c",
+              "DocumentMoniker": "C:\\Users\\nikie\\Downloads\\main.c",
+              "ToolTip": "C:\\Users\\nikie\\Downloads\\main.c",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAiwHQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-04-06T20:01:05.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Lab7.cpp",
-              "DocumentMoniker": "E:\\GitHub\\University\\DS\\Lab7\\Lab7\\Lab7.cpp",
-              "RelativeDocumentMoniker": "Lab7\\Lab7.cpp",
-              "ToolTip": "E:\\GitHub\\University\\DS\\Lab7\\Lab7\\Lab7.cpp",
-              "RelativeToolTip": "Lab7\\Lab7.cpp",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAAAEYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-03-27T08:17:51.064Z",
+              "Title": "Lab7.c",
+              "DocumentMoniker": "E:\\GitHub\\University\\DS\\Lab7\\Lab7\\Lab7.c",
+              "RelativeDocumentMoniker": "Lab7\\Lab7.c",
+              "ToolTip": "E:\\GitHub\\University\\DS\\Lab7\\Lab7\\Lab7.c",
+              "RelativeToolTip": "Lab7\\Lab7.c",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAAAHQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-04-06T19:58:41.023Z",
               "EditorCaption": ""
             }
           ]
