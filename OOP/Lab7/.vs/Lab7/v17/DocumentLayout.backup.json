@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\GitHub\\University\\OOP\\Lab7\\",
+  "WorkspaceRootPath": "D:\\GitHub\\University\\OOP\\Lab7\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1E95DA89-FD16-4E74-ABBF-B58B46211C22}|Lab7\\Lab7.vcxproj|E:\\GitHub\\University\\OOP\\Lab7\\Lab7\\Lab7.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{1E95DA89-FD16-4E74-ABBF-B58B46211C22}|Lab7\\Lab7.vcxproj|D:\\GitHub\\University\\OOP\\Lab7\\Lab7\\Lab7.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{1E95DA89-FD16-4E74-ABBF-B58B46211C22}|Lab7\\Lab7.vcxproj|solutionrelative:Lab7\\Lab7.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Lab7.cpp",
-              "DocumentMoniker": "E:\\GitHub\\University\\OOP\\Lab7\\Lab7\\Lab7.cpp",
+              "DocumentMoniker": "D:\\GitHub\\University\\OOP\\Lab7\\Lab7\\Lab7.cpp",
               "RelativeDocumentMoniker": "Lab7\\Lab7.cpp",
-              "ToolTip": "E:\\GitHub\\University\\OOP\\Lab7\\Lab7\\Lab7.cpp",
+              "ToolTip": "D:\\GitHub\\University\\OOP\\Lab7\\Lab7\\Lab7.cpp",
               "RelativeToolTip": "Lab7\\Lab7.cpp",
-              "ViewState": "AgIAADYAAAAAAAAAAAAkwJ0AAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAM8AAAAAAAAAAAAkwJ0AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-03-27T08:17:51.064Z",
               "EditorCaption": ""

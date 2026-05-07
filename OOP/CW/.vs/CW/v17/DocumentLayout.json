@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\GitHub\\University\\OOP\\CW\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FA2B4697-1BE3-4478-BBB9-63CFCEEE4FA2}|CW\\CW.vcxproj|D:\\GitHub\\University\\OOP\\CW\\CW\\CW.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FA2B4697-1BE3-4478-BBB9-63CFCEEE4FA2}|CW\\CW.vcxproj|solutionrelative:CW\\CW.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CW.cpp",
+              "DocumentMoniker": "D:\\GitHub\\University\\OOP\\CW\\CW\\CW.cpp",
+              "RelativeDocumentMoniker": "CW\\CW.cpp",
+              "ToolTip": "D:\\GitHub\\University\\OOP\\CW\\CW\\CW.cpp",
+              "RelativeToolTip": "CW\\CW.cpp",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-05-07T14:30:22.817Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
