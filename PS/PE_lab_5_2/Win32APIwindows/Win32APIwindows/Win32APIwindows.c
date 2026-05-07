@@ -170,13 +170,11 @@ HDC					hdc2;
     static int middleMouseBtnClickCount = 0;
 	static HWND hWndChild;
 	
-		static POINT p[100];
-		static POINT last8[8];
-		static int counter = 0;
-		static int circlesCount = 0;
-		static BOOL hasClicked = FALSE;
-		static BOOL showCircles = TRUE;
-		static BOOL showLast8 = FALSE;
+	static POINT allCircles[100];
+	static int totalCount = 0;
+	static BOOL showCircles = TRUE;
+	static BOOL onlyLast8 = FALSE;
+	static BOOL hasClicked = FALSE;
 
 	totalMsgCount++;
 
@@ -200,63 +198,42 @@ HDC					hdc2;
 		mouseMoveCount++;
 		break;
 	case WM_LBUTTONDOWN: {
+		POINT pt;
+		pt.x = GET_X_LPARAM(lParam);
+		pt.y = GET_Y_LPARAM(lParam);
+
+		// Чертаем веднага
+		HDC hdc = GetDC(hWnd);
+		HPEN pen = CreatePen(PS_SOLID, 5, RGB(255, 0, 0));
+		HPEN oldPen = (HPEN)SelectObject(hdc, pen);
+		int radius = 100;
+		Ellipse(hdc, pt.x - radius, pt.y - radius, pt.x + radius, pt.y + radius);
+		SelectObject(hdc, oldPen);
+		DeleteObject(pen);
+		ReleaseDC(hWnd, hdc);
+
+		// Запазваме в големия масив
+		if (totalCount < 1000) {
+			allCircles[totalCount] = pt;
+			totalCount++;
+		}
+
 		showCircles = TRUE;
-
-		p[counter].x = GET_X_LPARAM(lParam);
-		p[counter].y = GET_Y_LPARAM(lParam);
-		hasClicked = TRUE;
-
-		if (circlesCount < 8) {
-			last8[circlesCount].x = GET_X_LPARAM(lParam);
-			last8[circlesCount].y = GET_Y_LPARAM(lParam);
-			circlesCount++;
-		}
-		else
-		{
-			for (int i = 0; i < circlesCount; i++) {
-				last8[circlesCount] = last8[circlesCount + 1];
-			}
-			last8[circlesCount].x = GET_X_LPARAM(lParam);
-			last8[circlesCount].y = GET_Y_LPARAM(lParam);
-		}
+		onlyLast8 = FALSE; // При нормално рисуване се показват всички
 
 		leftMouseBtnClickCount++;
-		OutputDebugString(TEXT("Left mouse button was clicked!\n"));
-		//ShowWindow(hWndChild, SW_SHOW);
-		counter++;
-		InvalidateRect(hWnd, NULL, TRUE);
 		break;
 	}
 	case WM_RBUTTONDOWN:{
-		showCircles = FALSE;
-		for (int i = 0; i < counter; i++) {
-			p[i].x = NULL;
-			p[i].y = NULL;
-		}
-
+		showCircles = FALSE; // Скрива всичко
 		rightMouseBtnClickCount++;
-		OutputDebugString(TEXT("Right mouse button was clicked!\n"));
-		//ShowWindow(hWndChild, SW_HIDE);
-		counter = 0;
 		InvalidateRect(hWnd, NULL, TRUE);
 		break;
 	}
 	case WM_MBUTTONDOWN:
-		showCircles = FALSE;
-		showLast8 = TRUE;
-
-		for (int i = 0; i < counter; i++) {
-			p[i].x = NULL;
-			p[i].y = NULL;
-		}
-		counter = 8;
-		
-		for (int i = 0; i < circlesCount; i++) {
-			p[i] = last8[i];
-		}
-
+		showCircles = TRUE;
+		onlyLast8 = TRUE; // Казваме на WM_PAINT да рисува само последните 8
 		middleMouseBtnClickCount++;
-		OutputDebugString(TEXT("Middle mouse button was clicked!\n"));
 		InvalidateRect(hWnd, NULL, TRUE);
 		break;
 	case WM_COMMAND :
@@ -278,32 +255,30 @@ HDC					hdc2;
 
 	case WM_PAINT: {
 		hdc = BeginPaint(hWnd, &ps);
-		// Add any drawing code here
 
-		if (hasClicked == TRUE && showCircles == TRUE) {
+		if (showCircles == TRUE && totalCount > 0) {
 			int radius = 100;
 			HPEN pen = CreatePen(PS_SOLID, 5, RGB(255, 0, 0));
 			HPEN hOldPen = (HPEN)SelectObject(hdc, pen);
 
-			if (showLast8 == TRUE) {
-				for (int i = 0; i < circlesCount; i++) {
-					Ellipse(hdc, last8[i].x - radius, last8[i].y - radius, last8[i].x + radius, last8[i].y + radius);
-				}
+			int startIndex = 0;
+			// Ако е натиснат среден бутон и имаме над 8, започваме от последните 8
+			if (onlyLast8 == TRUE && totalCount > 8) {
+				startIndex = totalCount - 8;
 			}
-			else {
-				for (int i = 0; i < counter; i++) {
-					Ellipse(hdc, p[i].x - radius, p[i].y - radius, p[i].x + radius, p[i].y + radius);
-				}
+
+			// Рисуваме каквото трябва
+			for (int i = startIndex; i < totalCount; i++) {
+				Ellipse(hdc,
+					allCircles[i].x - radius, allCircles[i].y - radius,
+					allCircles[i].x + radius, allCircles[i].y + radius);
 			}
 
 			SelectObject(hdc, hOldPen);
 			DeleteObject(pen);
 		}
+
 		EndPaint(hWnd, &ps);
-
-		hdc2 = BeginPaint(hWndChild, &ps);
-		EndPaint(hWndChild, &ps);
-
 		break;
 	}
 
