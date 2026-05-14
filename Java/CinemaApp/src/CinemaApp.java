@@ -9,7 +9,6 @@ import java.util.List;
 
 public class CinemaApp extends JFrame {
 
-    // Цветовете и размерите вече са public, за да ги четат другите файлове
     public static final Color BG_COLOR = Color.BLACK;
     public static final Color TEXT_COLOR = Color.WHITE;
     public static final Color ACCENT_COLOR = new Color(127, 0, 255);
@@ -42,8 +41,6 @@ public class CinemaApp extends JFrame {
         cardLayout = new CardLayout();
         cardPanel = new JPanel(cardLayout);
         cardPanel.setBackground(BG_COLOR);
-
-        // Използваме методите от новия файл UIPanels
         cardPanel.add(UIPanels.createMovieGridPanel(this, nowMovies, true), "ON_SCREEN");
         cardPanel.add(UIPanels.createMovieGridPanel(this, comingSoonMovies, false), "SOON");
         cardPanel.add(UIPanels.createPricesPanel(), "PRICES");
@@ -54,8 +51,6 @@ public class CinemaApp extends JFrame {
     private JPanel createNavBar() {
         JPanel navPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 20, 20));
         navPanel.setBackground(BG_COLOR);
-
-        // Използваме бутоните от новия файл UIComponents
         onScreenBtn = new UIComponents.NavButton("ON SCREEN", true);
         soonBtn = new UIComponents.NavButton("SOON", false);
         pricesBtn = new UIComponents.NavButton("PRICES", false);
@@ -78,8 +73,6 @@ public class CinemaApp extends JFrame {
         pricesBtn.setActive(false);
         activeBtn.setActive(true);
     }
-
-    // Този метод се извиква от Диалога, за да върне екрана в началото
     public void returnToOnScreen() {
         switchTab("ON_SCREEN", onScreenBtn);
     }

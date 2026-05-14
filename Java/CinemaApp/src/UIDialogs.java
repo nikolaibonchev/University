@@ -121,7 +121,6 @@ public class UIDialogs {
             JOptionPane.showMessageDialog(dialog, "Successfully selected " + selectedSeats.size() + " seats!", "Reservation", JOptionPane.INFORMATION_MESSAGE);
             dialog.dispose();
 
-            // Връщаме екрана към първия таб след резервация
             app.returnToOnScreen();
         });
 
