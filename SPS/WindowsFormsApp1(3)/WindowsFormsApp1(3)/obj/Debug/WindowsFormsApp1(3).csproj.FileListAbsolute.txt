@@ -1,0 +1,11 @@
+D:\GitHub\University\SPS\WindowsFormsApp1(3)\WindowsFormsApp1(3)\bin\Debug\WindowsFormsApp1(3).exe.config
+D:\GitHub\University\SPS\WindowsFormsApp1(3)\WindowsFormsApp1(3)\bin\Debug\WindowsFormsApp1(3).exe
+D:\GitHub\University\SPS\WindowsFormsApp1(3)\WindowsFormsApp1(3)\bin\Debug\WindowsFormsApp1(3).pdb
+D:\GitHub\University\SPS\WindowsFormsApp1(3)\WindowsFormsApp1(3)\obj\Debug\WindowsFormsApp1(3).csproj.AssemblyReference.cache
+D:\GitHub\University\SPS\WindowsFormsApp1(3)\WindowsFormsApp1(3)\obj\Debug\WindowsFormsApp1_3_.Form1.resources
+D:\GitHub\University\SPS\WindowsFormsApp1(3)\WindowsFormsApp1(3)\obj\Debug\WindowsFormsApp1_3_.Properties.Resources.resources
+D:\GitHub\University\SPS\WindowsFormsApp1(3)\WindowsFormsApp1(3)\obj\Debug\WindowsFormsApp1(3).csproj.GenerateResource.cache
+D:\GitHub\University\SPS\WindowsFormsApp1(3)\WindowsFormsApp1(3)\obj\Debug\WindowsFormsApp1(3).csproj.CoreCompileInputs.cache
+D:\GitHub\University\SPS\WindowsFormsApp1(3)\WindowsFormsApp1(3)\obj\Debug\WindowsFormsApp1(3).exe
+D:\GitHub\University\SPS\WindowsFormsApp1(3)\WindowsFormsApp1(3)\obj\Debug\WindowsFormsApp1(3).pdb
+D:\GitHub\University\SPS\WindowsFormsApp1(3)\WindowsFormsApp1(3)\obj\Debug\WindowsFormsApp1(3).exe.config
