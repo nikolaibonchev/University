@@ -1,0 +1,4 @@
+﻿  ConsoleApplication2.c
+D:\GitHub\University\OSP\ConsoleApplication2\ConsoleApplication2\ConsoleApplication2.c(38,16): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\GitHub\University\OSP\ConsoleApplication2\ConsoleApplication2\ConsoleApplication2.c(42,16): warning C4305: 'initializing': truncation from 'double' to 'float'
+  ConsoleApplication2.vcxproj -> D:\GitHub\University\OSP\ConsoleApplication2\x64\Debug\ConsoleApplication2.exe
