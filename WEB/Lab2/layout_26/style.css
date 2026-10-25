@@ -7,6 +7,7 @@
 body 
 {
 	font-family: "Yuyu";
+	background-color: #c9e9ff;
 }
 
 .titles
@@ -28,34 +29,60 @@ body
 
 header 
 {
+	padding-top: 10px;
+    padding-bottom: 10px;
 	border-style: solid;
 	border-width: 5px;
 	border-radius: 10px;
 	border-color: #264de4;
-	padding: 0.5px;
 	text-align: center;
 	font-size: 35px;
+}
+
+header h3
+{
+	margin-top: 0;
+    margin-bottom: 0;
 }
 
 .row
 {
 	display: flex;
-	flex-wrap: wrap;
-	padding: 5px;
-
+    flex-wrap: wrap;
+    padding: 5px;
+    gap: 30px;
+    justify-content: center;
 }
 
 
 .column 
 {
-	
+	flex: 1;
+    min-width: 250px;
+	margin-top: 20px;
+    margin-bottom: 20px; 
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
 	border-style: solid;
 	border-width: 5px;
 	border-radius: 10px;
-	border-color: #264de4;
-	background-color: #264de4;
+	border-color:  #aedbfa;
+	background-color:  #aedbfa;
 	color: white;
- /* Should be removed. Only for demonstration */
+}
+
+.column:hover
+{
+    box-shadow: 0px 0px 20px 8px rgba(255, 255, 255, 0.9);
+    transform: translateY(-4px); 
+}
+
+.text
+{
+	background-color: #d1e8f8;
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 10px;
+	border-color:  #aedbfa;
 }
 
 footer 
