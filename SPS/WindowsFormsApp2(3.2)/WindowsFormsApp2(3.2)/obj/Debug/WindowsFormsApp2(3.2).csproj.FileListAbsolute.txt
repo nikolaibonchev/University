@@ -1,0 +1,11 @@
+E:\GitHub\University\SPS\WindowsFormsApp2(3.2)\WindowsFormsApp2(3.2)\bin\Debug\WindowsFormsApp2(3.2).exe.config
+E:\GitHub\University\SPS\WindowsFormsApp2(3.2)\WindowsFormsApp2(3.2)\bin\Debug\WindowsFormsApp2(3.2).exe
+E:\GitHub\University\SPS\WindowsFormsApp2(3.2)\WindowsFormsApp2(3.2)\bin\Debug\WindowsFormsApp2(3.2).pdb
+E:\GitHub\University\SPS\WindowsFormsApp2(3.2)\WindowsFormsApp2(3.2)\obj\Debug\WindowsFormsApp2(3.2).csproj.AssemblyReference.cache
+E:\GitHub\University\SPS\WindowsFormsApp2(3.2)\WindowsFormsApp2(3.2)\obj\Debug\WindowsFormsApp2_3._2_.Form1.resources
+E:\GitHub\University\SPS\WindowsFormsApp2(3.2)\WindowsFormsApp2(3.2)\obj\Debug\WindowsFormsApp2_3._2_.Properties.Resources.resources
+E:\GitHub\University\SPS\WindowsFormsApp2(3.2)\WindowsFormsApp2(3.2)\obj\Debug\WindowsFormsApp2(3.2).csproj.GenerateResource.cache
+E:\GitHub\University\SPS\WindowsFormsApp2(3.2)\WindowsFormsApp2(3.2)\obj\Debug\WindowsFormsApp2(3.2).csproj.CoreCompileInputs.cache
+E:\GitHub\University\SPS\WindowsFormsApp2(3.2)\WindowsFormsApp2(3.2)\obj\Debug\WindowsFormsApp2(3.2).exe
+E:\GitHub\University\SPS\WindowsFormsApp2(3.2)\WindowsFormsApp2(3.2)\obj\Debug\WindowsFormsApp2(3.2).pdb
+E:\GitHub\University\SPS\WindowsFormsApp2(3.2)\WindowsFormsApp2(3.2)\obj\Debug\WindowsFormsApp2(3.2).exe.config

@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\GitHub\\University\\ParallelProgramming\\ConsoleApplication4\\",
+  "WorkspaceRootPath": "E:\\GitHub\\University\\ParallelProgramming\\ConsoleApplication4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DC0A088A-EB37-4F65-B020-B0972B672013}|ConsoleApplication4\\ConsoleApplication4.vcxproj|D:\\GitHub\\University\\ParallelProgramming\\ConsoleApplication4\\ConsoleApplication4\\ConsoleApplication4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{DC0A088A-EB37-4F65-B020-B0972B672013}|ConsoleApplication4\\ConsoleApplication4.vcxproj|E:\\GitHub\\University\\ParallelProgramming\\ConsoleApplication4\\ConsoleApplication4\\ConsoleApplication4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DC0A088A-EB37-4F65-B020-B0972B672013}|ConsoleApplication4\\ConsoleApplication4.vcxproj|solutionrelative:ConsoleApplication4\\ConsoleApplication4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -20,9 +20,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ConsoleApplication4.cpp",
-              "DocumentMoniker": "D:\\GitHub\\University\\ParallelProgramming\\ConsoleApplication4\\ConsoleApplication4\\ConsoleApplication4.cpp",
+              "DocumentMoniker": "E:\\GitHub\\University\\ParallelProgramming\\ConsoleApplication4\\ConsoleApplication4\\ConsoleApplication4.cpp",
               "RelativeDocumentMoniker": "ConsoleApplication4\\ConsoleApplication4.cpp",
-              "ToolTip": "D:\\GitHub\\University\\ParallelProgramming\\ConsoleApplication4\\ConsoleApplication4\\ConsoleApplication4.cpp",
+              "ToolTip": "E:\\GitHub\\University\\ParallelProgramming\\ConsoleApplication4\\ConsoleApplication4\\ConsoleApplication4.cpp",
               "RelativeToolTip": "ConsoleApplication4\\ConsoleApplication4.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",

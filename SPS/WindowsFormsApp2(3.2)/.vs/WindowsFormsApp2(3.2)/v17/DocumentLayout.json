@@ -1,9 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\GitHub\\University\\SPS\\WindowsFormsApp2(3.2)\\",
+  "WorkspaceRootPath": "E:\\GitHub\\University\\SPS\\WindowsFormsApp2(3.2)\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E22D0B4E-CDD2-4A9D-82BF-8CE8478099AD}|WindowsFormsApp2(3.2)\\WindowsFormsApp2(3.2).csproj|d:\\github\\university\\sps\\windowsformsapp2(3.2)\\windowsformsapp2(3.2)\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E22D0B4E-CDD2-4A9D-82BF-8CE8478099AD}|WindowsFormsApp2(3.2)\\WindowsFormsApp2(3.2).csproj|e:\\github\\university\\sps\\windowsformsapp2(3.2)\\windowsformsapp2(3.2)\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E22D0B4E-CDD2-4A9D-82BF-8CE8478099AD}|WindowsFormsApp2(3.2)\\WindowsFormsApp2(3.2).csproj|solutionrelative:windowsformsapp2(3.2)\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E22D0B4E-CDD2-4A9D-82BF-8CE8478099AD}|WindowsFormsApp2(3.2)\\WindowsFormsApp2(3.2).csproj|e:\\github\\university\\sps\\windowsformsapp2(3.2)\\windowsformsapp2(3.2)\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E22D0B4E-CDD2-4A9D-82BF-8CE8478099AD}|WindowsFormsApp2(3.2)\\WindowsFormsApp2(3.2).csproj|solutionrelative:windowsformsapp2(3.2)\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -19,10 +23,23 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\GitHub\\University\\SPS\\WindowsFormsApp2(3.2)\\WindowsFormsApp2(3.2)\\Form1.cs",
+              "Title": "Form1.cs",
+              "DocumentMoniker": "E:\\GitHub\\University\\SPS\\WindowsFormsApp2(3.2)\\WindowsFormsApp2(3.2)\\Form1.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp2(3.2)\\Form1.cs",
-              "ToolTip": "D:\\GitHub\\University\\SPS\\WindowsFormsApp2(3.2)\\WindowsFormsApp2(3.2)\\Form1.cs [Design]",
+              "ToolTip": "E:\\GitHub\\University\\SPS\\WindowsFormsApp2(3.2)\\WindowsFormsApp2(3.2)\\Form1.cs",
+              "RelativeToolTip": "WindowsFormsApp2(3.2)\\Form1.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAUwDgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T10:42:34.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "E:\\GitHub\\University\\SPS\\WindowsFormsApp2(3.2)\\WindowsFormsApp2(3.2)\\Form1.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp2(3.2)\\Form1.cs",
+              "ToolTip": "E:\\GitHub\\University\\SPS\\WindowsFormsApp2(3.2)\\WindowsFormsApp2(3.2)\\Form1.cs [Design]",
               "RelativeToolTip": "WindowsFormsApp2(3.2)\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-28T11:10:51.119Z",

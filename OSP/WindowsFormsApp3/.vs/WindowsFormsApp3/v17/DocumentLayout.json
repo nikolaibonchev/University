@@ -1,21 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\GitHub\\University\\OSP\\WindowsFormsApp3\\",
+  "WorkspaceRootPath": "E:\\GitHub\\University\\OSP\\WindowsFormsApp3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9A290C97-4571-40A0-8C15-A8F4E58A7CFE}|WindowsFormsApp3\\WindowsFormsApp3.csproj|d:\\github\\university\\osp\\windowsformsapp3\\windowsformsapp3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A290C97-4571-40A0-8C15-A8F4E58A7CFE}|WindowsFormsApp3\\WindowsFormsApp3.csproj|solutionrelative:windowsformsapp3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A290C97-4571-40A0-8C15-A8F4E58A7CFE}|WindowsFormsApp3\\WindowsFormsApp3.csproj|d:\\github\\university\\osp\\windowsformsapp3\\windowsformsapp3\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A290C97-4571-40A0-8C15-A8F4E58A7CFE}|WindowsFormsApp3\\WindowsFormsApp3.csproj|solutionrelative:windowsformsapp3\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A290C97-4571-40A0-8C15-A8F4E58A7CFE}|WindowsFormsApp3\\WindowsFormsApp3.csproj|d:\\github\\university\\osp\\windowsformsapp3\\windowsformsapp3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{9A290C97-4571-40A0-8C15-A8F4E58A7CFE}|WindowsFormsApp3\\WindowsFormsApp3.csproj|E:\\GitHub\\University\\OSP\\WindowsFormsApp3\\windowsformsapp3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9A290C97-4571-40A0-8C15-A8F4E58A7CFE}|WindowsFormsApp3\\WindowsFormsApp3.csproj|solutionrelative:windowsformsapp3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A290C97-4571-40A0-8C15-A8F4E58A7CFE}|WindowsFormsApp3\\WindowsFormsApp3.csproj|d:\\github\\university\\osp\\windowsformsapp3\\windowsformsapp3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9A290C97-4571-40A0-8C15-A8F4E58A7CFE}|WindowsFormsApp3\\WindowsFormsApp3.csproj|E:\\GitHub\\University\\OSP\\WindowsFormsApp3\\windowsformsapp3\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A290C97-4571-40A0-8C15-A8F4E58A7CFE}|WindowsFormsApp3\\WindowsFormsApp3.csproj|solutionrelative:windowsformsapp3\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A290C97-4571-40A0-8C15-A8F4E58A7CFE}|WindowsFormsApp3\\WindowsFormsApp3.csproj|e:\\github\\university\\osp\\windowsformsapp3\\windowsformsapp3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A290C97-4571-40A0-8C15-A8F4E58A7CFE}|WindowsFormsApp3\\WindowsFormsApp3.csproj|solutionrelative:windowsformsapp3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A290C97-4571-40A0-8C15-A8F4E58A7CFE}|WindowsFormsApp3\\WindowsFormsApp3.csproj|E:\\GitHub\\University\\OSP\\WindowsFormsApp3\\windowsformsapp3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9A290C97-4571-40A0-8C15-A8F4E58A7CFE}|WindowsFormsApp3\\WindowsFormsApp3.csproj|solutionrelative:windowsformsapp3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -26,17 +26,31 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\GitHub\\University\\OSP\\WindowsFormsApp3\\WindowsFormsApp3\\Program.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp3\\Program.cs",
+              "ToolTip": "E:\\GitHub\\University\\OSP\\WindowsFormsApp3\\WindowsFormsApp3\\Program.cs",
+              "RelativeToolTip": "WindowsFormsApp3\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-26T09:56:43.523Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\GitHub\\University\\OSP\\WindowsFormsApp3\\WindowsFormsApp3\\Form1.cs",
+              "DocumentMoniker": "E:\\GitHub\\University\\OSP\\WindowsFormsApp3\\WindowsFormsApp3\\Form1.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp3\\Form1.cs",
-              "ToolTip": "D:\\GitHub\\University\\OSP\\WindowsFormsApp3\\WindowsFormsApp3\\Form1.cs*",
-              "RelativeToolTip": "WindowsFormsApp3\\Form1.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
+              "ToolTip": "E:\\GitHub\\University\\OSP\\WindowsFormsApp3\\WindowsFormsApp3\\Form1.cs",
+              "RelativeToolTip": "WindowsFormsApp3\\Form1.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowAgAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-26T10:25:51.742Z",
               "EditorCaption": ""
@@ -45,36 +59,23 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "D:\\GitHub\\University\\OSP\\WindowsFormsApp3\\WindowsFormsApp3\\Form1.Designer.cs",
+              "DocumentMoniker": "E:\\GitHub\\University\\OSP\\WindowsFormsApp3\\WindowsFormsApp3\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp3\\Form1.Designer.cs",
-              "ToolTip": "D:\\GitHub\\University\\OSP\\WindowsFormsApp3\\WindowsFormsApp3\\Form1.Designer.cs*",
-              "RelativeToolTip": "WindowsFormsApp3\\Form1.Designer.cs*",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB4AAABEAAAAAAAAAA==",
+              "ToolTip": "E:\\GitHub\\University\\OSP\\WindowsFormsApp3\\WindowsFormsApp3\\Form1.Designer.cs",
+              "RelativeToolTip": "WindowsFormsApp3\\Form1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-26T10:19:43.172Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\GitHub\\University\\OSP\\WindowsFormsApp3\\WindowsFormsApp3\\Program.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp3\\Program.cs",
-              "ToolTip": "D:\\GitHub\\University\\OSP\\WindowsFormsApp3\\WindowsFormsApp3\\Program.cs",
-              "RelativeToolTip": "WindowsFormsApp3\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-26T09:56:43.523Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\GitHub\\University\\OSP\\WindowsFormsApp3\\WindowsFormsApp3\\Form1.cs",
+              "DocumentMoniker": "E:\\GitHub\\University\\OSP\\WindowsFormsApp3\\WindowsFormsApp3\\Form1.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp3\\Form1.cs",
-              "ToolTip": "D:\\GitHub\\University\\OSP\\WindowsFormsApp3\\WindowsFormsApp3\\Form1.cs [Design]*",
-              "RelativeToolTip": "WindowsFormsApp3\\Form1.cs [Design]*",
+              "ToolTip": "E:\\GitHub\\University\\OSP\\WindowsFormsApp3\\WindowsFormsApp3\\Form1.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp3\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-26T09:55:37.267Z",
               "EditorCaption": " [Design]"
